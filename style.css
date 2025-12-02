@@ -677,20 +677,21 @@ body._lock {
 
 .sub-menu li {
    background-color: #229ED9;
-   padding: 5px 2px;
+   padding: 10px 2px;
    line-height: 0.8;
    border-radius: 5px;
    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
    transform: scale(0);
    transform-origin: top center;
    transition: all 300ms ease-in-out;
-
+   width: 200%;
 }
 
 .sub-menu li a {
    font-family: 'Gilroy-Light';
-   font-size: 14px;
+   font-size: 18px;
    color: white;
+   color: #000;
 }
 
 .sub-menu li:last-child {
@@ -1122,6 +1123,15 @@ body._lock {
    .first-screen__img-7 {
       display: block;
       margin: 0 auto;
+   }
+
+   .sub-menu li {
+      width: 100%;
+      padding: 5px;
+   }
+
+   .sub-menu li a {
+      font-size: 14px;
    }
 }
 
