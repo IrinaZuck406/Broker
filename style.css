@@ -2354,6 +2354,10 @@ body._lock {
 
 .plan__item {
    width: 22%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
 }
 
 .plan__number {
@@ -2422,6 +2426,7 @@ body._lock {
    font-size: 22px;
    font-size: calc(20px + 2*(100vw - 414px)/986);
    color: #414141;
+   text-align: center;
 }
 
 .plan__text span {
@@ -2528,7 +2533,7 @@ body._lock {
    }
 
    .plan__info {
-      width: 70%;
+      width: 100%;
 
    }
 
