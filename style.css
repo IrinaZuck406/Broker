@@ -108,8 +108,11 @@ body._lock {
    transform: scale(0);
 }
 
+.header__burger-nav1 {
+   margin: -24px;
+}
 
-
+.header__burger-nav1,
 .header__burger-nav ul {
    display: flex;
    flex-direction: column;
@@ -118,11 +121,11 @@ body._lock {
    gap: 20px;
 }
 
-.header__burger-nav a {
+/*.header__burger-nav a {
    font-family: 'Gilroy-Light';
    font-size: 16px;
    color: #414141;
-}
+}*/
 
 .burger__x,
 .header__burger-icon {
@@ -174,6 +177,13 @@ body._lock {
    transform: scale(0.8);
    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.header__burger-nav1 a,
+.header__burger-nav a {
+   font-family: 'Gilroy-ExtraBold';
+   font-size: 24px;
+   color: #414141;
 }
 
 .burger__overlay.active .burger__content {
@@ -696,9 +706,6 @@ body._lock {
    color: #000;
 }
 
-.sub-menu li:last-child {
-   /* border-bottom: 0;*/
-}
 
 .sub-menu li:hover {
    background: #0051FF;
@@ -1317,6 +1324,7 @@ body._lock {
 .loan-calculator__data-entry {
    padding-top: 38px;
    padding-bottom: 27px;
+   align-self: start;
 }
 
 .loan-calculator label {
