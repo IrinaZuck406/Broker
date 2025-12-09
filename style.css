@@ -5037,7 +5037,7 @@ body._lock {
 .conditions-bank-guarantee__wrapper {
    display: flex;
    justify-content: space-between;
-   align-items: flex-start;
+   align-items: stretch;
    gap: 10px;
 }
 
