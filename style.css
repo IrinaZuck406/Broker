@@ -4946,12 +4946,16 @@ body._lock {
    font-family: 'Gilroy-ExtraBold';
 }
 
+.what-is-bank-guarantee__box-item img {
+   margin: 0 auto;
+   display: block;
+}
 
 .what-is-bank-guarantee__box p {
    font-family: 'Gilroy-Light';
    font-size: 20px;
-
    font-size: calc(16px + 4*(100vw - 414px)/986);
+   text-align: center;
 }
 
 @media(min-width:1400px) {
@@ -5150,11 +5154,11 @@ body._lock {
 
 .choice-bank-guarantee__item div {
    height: 160px;
-   padding-left: 10px;
    display: flex;
    flex-direction: column;
-   align-items: start;
+   align-items: center;
    justify-content: flex-end;
+   margin: 0 auto;
 }
 
 .choice-bank-guarantee__item h3 {
@@ -5162,11 +5166,13 @@ body._lock {
    font-size: 20px;
    margin-top: 20px;
    margin-bottom: 10px;
+   text-align: center;
 }
 
 .choice-bank-guarantee__item p {
    font-family: 'Gilroy-Light';
    font-size: 16px;
+   text-align: center;
 }
 
 @media(max-width:950px) {
