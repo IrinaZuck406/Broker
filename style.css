@@ -875,6 +875,13 @@ body._lock {
 
 }
 
+.first-screen h1.text-center {
+   max-width: 100%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
 .first-screen h1 span.first-screen__title-span {
    position: relative;
 }
@@ -981,10 +988,11 @@ body._lock {
 }
 
 .first-screen__map {
-   width: 100%;
-   aspect-ratio: 1400/710;
+   width: 80%;
+   aspect-ratio: 1200/710;
    border-radius: 20px;
    background-color: #2da3db;
+   margin: 30px auto 0;
 }
 
 .first-screen__content-contact {
@@ -5902,3 +5910,5 @@ body._lock {
       border-radius: 20px;
    }
 }
+
+/*------------------------------------------------------*/
