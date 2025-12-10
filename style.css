@@ -972,12 +972,63 @@ body._lock {
    color: #414141;
 }
 
+.first-screen__map {
+   width: 100%;
+   aspect-ratio: 1400/710;
+   border-radius: 20px;
+   background-color: #2da3db;
+}
+
+.first-screen__content-contact {
+   width: 100%;
+   position: relative;
+}
+
+.contact-box {
+   width: 524px;
+   padding: 40px 30px;
+   border-radius: 20px;
+   border: 1px solid #414141;
+   position: absolute;
+   bottom: 40px;
+   left: 40px;
+   background-color: #fff;
+}
+
+.contact-box h3 {
+   margin-top: 60px;
+   margin-bottom: 33px;
+   font-family: 'Gilroy-Light';
+   font-size: 30px;
+   font-size: calc(24px + 6*(100vw - 414px)/986);
+}
+
+.contact-box table {
+   max-width: 100%;
+   font-family: 'Gilroy-Light';
+   font-size: 20px;
+   font-size: calc(14px + 6*(100vw - 414px)/986);
+   line-height: 2;
+}
+
+
+
+.contact-box .header__links {
+   width: 300px;
+   gap: 20px;
+   margin-bottom: 20px;
+}
+
 @media(min-width:1400px) {
 
    .title-bold,
    .title-light,
    .title-in-background {
       font-size: 46px;
+   }
+
+   .contact-box h3 {
+      font-size: 32px;
    }
 
    .header__links a,
@@ -1000,6 +1051,7 @@ body._lock {
       font-size: 32px;
    }
 
+   .contact-box table,
    .first-screen__article-info p {
       font-size: 20px;
    }
@@ -1106,11 +1158,35 @@ body._lock {
    }
 }
 
+@media(max-width:800px) {
+   .contact-box h3 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
 
+   .contact-box table {
+      line-height: 1.2;
+   }
+}
 
 @media(max-width:650px) {
    .header__links-icon {
       display: none;
+   }
+
+   .contact-box .header__links {
+
+      width: 100%;
+   }
+
+   .contact-box .header__links-icon {
+      display: block;
+   }
+
+   .contact-box {
+      width: 80%;
+      bottom: -30px;
+      padding: 10px 5px;
    }
 }
 
@@ -5711,7 +5787,6 @@ body._lock {
 .cooperation-candidates__item {
    width: 49%;
    border-radius: 20px;
-   background-color: #2a71f8;
    display: flex;
    justify-content: start;
    align-items: stretch;
@@ -5728,6 +5803,8 @@ body._lock {
 .cooperation-candidates__item-content {
    width: 56%;
    position: relative;
+   background-color: #2a71f8;
+   border-radius: 0 20px 20px 0;
    padding: 55px 30px 26px;
    display: flex;
    justify-content: space-between;
@@ -5807,5 +5884,6 @@ body._lock {
 
    .cooperation-candidates__item-content {
       width: 100%;
+      border-radius: 20px;
    }
 }
