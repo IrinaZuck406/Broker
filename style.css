@@ -602,6 +602,10 @@ body._lock {
    transition: all 0.3s ease;
 }
 
+.first-screen-min .header__buttons a:nth-child(1) {
+   padding: 13px 21px;
+}
+
 .header__buttons a:nth-child(1):hover {
    background-color: #2aabee;
    color: #002976;
@@ -742,6 +746,10 @@ body._lock {
    align-items: center;
    gap: 15px;
 
+}
+
+.first-screen-min .header__bottom-nav ul {
+   justify-content: start;
 }
 
 .header__bottom-nav ul li a {
@@ -1277,6 +1285,10 @@ body._lock {
 
    .header__menu-icon {
       margin-right: 5px;
+   }
+
+   .header__logo img {
+      width: 140px;
    }
 }
 
@@ -5660,6 +5672,7 @@ body._lock {
 /*---------------------------------------------------------*/
 .cooperation-proposal {
    padding-top: 100px;
+
 }
 
 .cooperation-proposal__title {
@@ -5769,6 +5782,7 @@ body._lock {
 /*----------------------------------------------------------*/
 .cooperation-candidates {
    padding-top: 100px;
+   padding-bottom: 50px;
 }
 
 .cooperation-candidates__title {
@@ -5870,6 +5884,7 @@ body._lock {
 @media(max-width:800px) {
    .cooperation-candidates {
       padding-top: 60px;
+      padding-bottom: 0;
    }
 
    .cooperation-candidates__title {
