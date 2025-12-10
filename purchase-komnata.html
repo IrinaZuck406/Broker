@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="style.css">
+   <title>Срочный выкуп комнаты</title>
+</head>
+
+<body>
+   <div class="application-modal__overlay">
+      <div class="application-modal__content">
+         <img class="application-modal__x" src="images/icon-burger.png">
+         <div class="application-modal__wrapper">
+            <h2 class="application-modal__title">Ваша заявка</h2>
+            <p class="application-modal__subtitle">С вами свяжется наш менеджер в течение 5 минут</p>
+            <form action="#">
+               <input type="text" placeholder="Имя">
+               <input type="tel" placeholder="+7 (___)-__-__">
+               <textarea name="textarea" placeholder="Сообщение"></textarea>
+               <button type="submit">Оставить заявку</button>
+               <p class="application-modal__text">Нажимая кнопку "Отправить" вы соглашаетесь на обработку <a
+                     href="#">политикой
+                     конфиденциальности</a></p>
+               <p class="application-modal__text">Этот сайт защищен reCAPTCHA и Google <a href="#">политика
+                     конфиденциальности</a> и
+                  <a href="#">условия использования.</a>
+               </p>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="consultation-modal__overlay">
+      <div class="consultation-modal__content">
+         <img class="consultation-modal__x" src="images/icon-burger.png">
+         <img class="consultation-modal__img" src="images/modal-img.png" alt="Картинка">
+         <h2>Подберем наилучшие условия и поможем получить кредит.</h2>
+         <form action="#">
+            <p>Введите имя</p>
+            <input type="text" placeholder="Имя">
+            <p>Введите номер</p>
+            <input type="tel" placeholder="+7 (___)-__-__">
+            <button type="submit">Оставить заявку</button>
+         </form>
+      </div>
+   </div>
+
+   <div class="burger__overlay">
+      <div class="burger__content">
+         <img src="images/icon-burger.png" class="burger__x">
+         <div class="header__burger-nav"></div>
+         <!-- <div class="header__burger-nav1">
+            <a href="#">Лизинг</a>
+            <a href="#">Банковские гарантии</a>
+         </div>-->
+         <div class="header__links">
+            <div class="header__burger-links-tel">
+               <a href="#">+7 (989) 209-74-50</a>
+            </div>
+            <div class="header__burger-links-icon">
+               <a href="#"><img src="images/telegram.png"></a>
+               <a href="#"><img src="images/whatsapp.png"></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--  <div class="header__burger">
+      <div class="header__burger-icon"><img src="images/icon-burger.png"></div>
+      <div class="header__burger-nav"></div>
+      <div class="header__links">
+         <div class="header__burger-links-tel">
+            <a href="#">+7 (989) 209-74-50</a>
+         </div>
+         <div class="header__burger-links-icon">
+            <a href="#"><img src="images/telegram.png"></a>
+            <a href="#"><img src="images/whatsapp.png"></a>
+         </div>
+      </div>
+   </div>-->
+   <section class="first-screen">
+
+      <img src="images/header-img2.png" class="first-screen__img-2">
+      <img src="images/header-img3.png" class="first-screen__img-3">
+      <img src="images/header-img4.png" class="first-screen__img-4">
+
+      <div class="first-screen__container container">
+         <img src="images/header-img1.png" class="first-screen__img-1">
+         <img src="images/header-img5.png" class="first-screen__img-5">
+
+         <div class="header">
+            <div class="header__top">
+               <a href="index.html" class="header__logo">
+                  <img src="images/header-logo.png" alt="логотип">
+               </a>
+               <div class="header__buttons">
+                  <a href="#" data-goto=".loan-calculator">Калькулятор кредитования<img
+                        src="images/header-calc.png"></a>
+                  <a class="btn-trigger" href="#">Получить консультацию</a>
+               </div>
+               <div class="header__links">
+                  <div class="header__links-tel">
+                     <a href="#">+7 (989) 209-74-50</a>
+                     <p>Пн-Пт: с 9:00 до 19:00</p>
+
+                  </div>
+                  <div class="header__links-icon">
+                     <a href="#"><img src="images/telegram.png"></a>
+                     <a href="#"><img src="images/whatsapp2.png"></a>
+                  </div>
+               </div>
+               <div class="header__menu-icon burger-btn-trigger"><img src="images/icon-burger1.png"></div>
+            </div>
+            <div class="header__bottom">
+               <div class="header__bottom-menu">
+                  <ul class="menu">
+                     <li>
+                        Бизнесу <img src="images/menu.png">
+                        <ul class="sub-menu">
+                           <li><a href="buisness-no-salog.html">Бизнесу без залога</a></li>
+                           <li><a href="business-salog.html">Бизнесу с залогом</a></li>
+                           <li><a href="buisnes-salog-nedvig.html">Бизнесу под залог коммерческой недвижимости</a></li>
+                           <li><a href="ip-no-salog.html">Для ИП без залога</a></li>
+                           <li><a href="ip-salog.html">Для ИП под залог</a></li>
+                           <li><a href="lising.html">Лизинг</a></li>
+                           <li><a href="bank-guarantee.html">Банковские гарантии</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        Физ лицам <img src="images/menu.png">
+                        <ul class="sub-menu">
+                           <li><a href="person-salog-kvartira.html">Под залог квартиры</a></li>
+                           <li><a href="person-salog-dom.html">Под залог загородной недвижимости</a></li>
+                           <li><a href="person-salog-komnata.html">Под залог комнаты</a></li>
+                           <li><a href="person-salog-avto.html">Под залог машиноместа</a></li>
+                           <li><a href="person-salog-kvartira-investor.html">Под залог квартиры от частного
+                                 инвестора</a></li>
+                           <li><a href="person-salog-komnata-investor.html">Под залог комнаты от частного инвестора</a>
+                           </li>
+                           <li><a href="person-salog-dom-investor.html">Под залог загородной недвижимости от частного
+                                 инвестора</a></li>
+                           <li><a href="person-salog-avto-investor.html">Под залог машиноместа от частного инвестора</a>
+                           </li>
+
+                        </ul>
+                     </li>
+                     <li>
+                        Выкуп <img src="images/menu.png">
+                        <ul class="sub-menu">
+                           <li><a href="purchase-kvartira.html">Срочный выкуп квартиры</a></li>
+                           <li><a href="purchase-komnata.html">Срочный выкуп комнаты</a></li>
+                           <li><a href="purchase-dom.html">Срочный выкуп загородной недвижимости</a></li>
+                           <li><a href="purchase-avto.html">Срочный выкуп машиноместа</a></li>
+                           <li><a href="article.html">Страница блог(ВРЕМЕННО)</a></li>
+                           <li><a href="index2.html">Страница2(ВРЕМЕННО)</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <nav class="header__bottom-nav">
+                  <ul>
+                     <li><a href="#" data-goto=".no-bounce">Преимущества</a></li>
+                     <li><a href="#" data-goto=".partners">С кем мы работаем ?</a></li>
+                     <li><a href="#" data-goto=".services">Услуги</a></li>
+                     <li><a href="#" data-goto=".plan">Схема работы</a></li>
+                     <li><a href="#" data-goto=".reviews">Отзывы</a></li>
+                     <li><a href="#" data-goto=".answers">FAQ</a></li>
+                     <li><a href="#" data-goto=".blog">Блог</a></li>
+
+                  </ul>
+               </nav>
+            </div>
+         </div>
+
+         <div class="first-screen__content">
+            <div>
+               <p class="first-screen__crumbs">Главная / Выкуп / Срочный выкуп комнаты</p>
+            </div>
+            <!--  <button class="first-screen__button-1" data-goto=".consultation1">Одобрим за 1 час<img
+                  src="images/first-screen-button.png"></button>-->
+            <h1 class="first-screen__title title-bold">
+               Срочный выкуп комнаты. Получите до 90% рыночной стоимости наличными за 72 часа
+
+               <!-- <div>
+                  <span class="first-screen__title-span title-in-background">Одобрение 97%</span>&nbsp<span
+                     class="first-screen__title-span1">Одобрено
+                     кредитов за сегодня 10/12</span>
+               </div>-->
+
+            </h1>
+            <ul class="first-screen__list">
+               <li>
+                  <div class="first-screen__item-img">
+                     <img src="images/first-screen-list1.png" alt="img">
+                  </div>
+                  <div class="first-screen__item-text">Подбор кредитов среди 40 банков-партнеров и базы частных
+                     инвесторов</div>
+               </li>
+               <li>
+                  <div class="first-screen__item-img">
+                     <img src="images/first-screen-list2.png" alt="img">
+                  </div>
+                  <div class="first-screen__item-text">Подбор на ваших условиях</div>
+               </li>
+               <li>
+                  <div class="first-screen__item-img">
+                     <img src="images/first-screen-list3.png" alt="img">
+                  </div>
+                  <div class="first-screen__item-text">Без массовых рассылок</div>
+               </li>
+               <li>
+                  <div class="first-screen__item-img">
+                     <img src="images/first-screen-list4.png" alt="img">
+                  </div>
+                  <div class="first-screen__item-text">Полное сопровождение-от анализа до выдачи средств</div>
+               </li>
+            </ul>
+            <div class="first-screen__proposal">
+               <button class="first-screen__button-2" data-goto=".consultation1">
+                  Подобрать кредит <img src="images/first-screen-button2.png">
+               </button>
+               <p>из 5789 доступных вариантов</p>
+            </div>
+         </div>
+         <img src="images/jandex-karti.png" class="first-screen__img-6" alt="yandex-card">
+         <img src="images/reiting5.0.png" class="first-screen__img-7" alt="raiting">
+      </div>
+   </section>
+
+
+   <section class="choice-redemption">
+      <div class="choice-redemption__container container">
+         <h2 class="choice-redemption-title title-bold">Почему стоит выбрать именно нас для срочного выкупа комнаты
+         </h2>
+         <ul class="choice-redemption__wrapper">
+            <li>
+               <img src="images/choice-redemption-bg.png" class="choice-redemption__bg">
+               <img src="images/choice-redemption1.png" alt="Картинка" class="choice-redemption__img">
+               <div>
+                  <h3>Быстрые сроки и гарантированный выкуп</h3>
+                  <p>Мы выкупаем квартиры в Москве за рекордные 1-5 дней. После предварительной оценки гарантируем 100%
+                     выкуп вашей недвижимости в обозначенные сроки.</p>
+               </div>
+            </li>
+            <li>
+               <img src="images/choice-redemption-bg.png" class="choice-redemption__bg">
+               <img src="images/choice-redemption2.png" alt="Картинка" class="choice-redemption__img">
+               <div>
+                  <h3>Максимально выгодные условия</h3>
+                  <p>Получите до 90% рыночной стоимости вашей квартиры. Мы учитываем все факторы: локацию, площадь,
+                     состояние и другие при независимой оценке. Никаких скрытых комиссий и наценок.</p>
+               </div>
+            </li>
+            <li>
+               <img src="images/choice-redemption-bg.png" class="choice-redemption__bg">
+               <img src="images/choice-redemption3.png" alt="Картинка" class="choice-redemption__img">
+               <div>
+                  <h3>Безопасность сделки на 100%</h3>
+                  <p>Работаем строго по закону и обеспечиваем полную юридическую чистоту. Сделка проходит с нотариальным
+                     заверением и под контролем опытных юристов. Ваши права защищены.</p>
+               </div>
+            </li>
+            <li>
+               <img src="images/choice-redemption-bg.png" class="choice-redemption__bg">
+               <img src="images/choice-redemption4.png" alt="Картинка" class="choice-redemption__img">
+               <div>
+                  <h3>Профессионализм и оперативность</h3>
+                  <p>В нашей компании работают только эксперты рынка недвижимости. Мы оперативно решаем любые ситуации:
+                     ипотека, долги, проблемы с документами, доли собственников и другие.</p>
+               </div>
+            </li>
+
+         </ul>
+      </div>
+   </section>
+   <section class="unusual-situations">
+      <div class="unusual-situations__container container">
+         <h2 class="unusual-situations__title title-bold">Выкупаем квартиры даже в самых нестандартных ситуациях</h2>
+         <ul class="unusual-situations__wrapper">
+            <li>
+               <h3>✓ Квартира в ипотеке или залоге</h3>
+               <p>Полностью погасим задолженность по ипотечному кредиту. Работаем со всеми банками</p>
+            </li>
+            <li>
+               <h3>✓ Имеются долги по ЖКХ и коммунальным платежам</h3>
+               <p>Погасим накопившиеся долги по квартплате и возьмем ситуацию под свой контроль.</p>
+            </li>
+            <li>
+               <h3>✓ Квартира требует ремонта или в плохом состоянии</h3>
+               <p>Полностью погасим задолженность по ипотечному кредиту. Работаем со всеми банками</p>
+            </li>
+         </ul>
+      </div>
+   </section>
+   <section class="calculation-ransom">
+      <div class="calculation-ransom__container container">
+         <h2 class="calculation-ransom__title title-bold">Пройдите тест и узнайте примерную сумму выкупа комнаты
+            <span class="title-in-background">до 90%</span>от рыночной стоимости
+         </h2>
+         <form action="#">
+            <ul class="calculation-ransom__wrapper">
+               <li class="calculation-ransom__item active" id="block1"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__radio">
+                     <p class="calculation-ransom__subtitle">Узнайте примерную стоимость недвижимости при срочном выкупе
+                     </p>
+                     <h3>Комната жилая или нежилая?</h3>
+                     <ul class="calculation-ransom__radio-wrapper">
+                        <li>
+                           <label for="room1">
+                              <input type="radio" value="1" name="room" id="room1" checked>
+                              <span>Жилая</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="room2">
+                              <input type="radio" value="2" name="room" id="room2">
+                              <span>Нежилая</span>
+                           </label>
+                        </li>
+
+                     </ul>
+                     <div class="calculation-ransom__item-buttons">
+                        <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                              src="images/calculation-ransom1.png" alt="Картинка">
+                        </button>
+                        <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                     </div>
+
+                     <div class="calculation-ransom__percentage-readiness">
+                        <p>Готово 16%</p>
+                        <div class="calculation-ransom__percentage-readiness-wrapper">
+                           <div class="calculation-ransom__percentage-readiness-item1"></div>
+                        </div>
+                        <div class="calculation-ransom__percentage-readiness-buttons">
+                           <!-- <button type="button" class="calculation-ransom__item-button3"></button>-->
+                           <button type="button" onclick="showBlock(2)"
+                              class="calculation-ransom__item-button4">Далее<img src="images/services-link1.png"><img
+                                 src="images/services-link2.png"><img src="images/services-link3.png"></button>
+                        </div>
+                     </div>
+                  </div>
+
+               </li>
+               <li class="calculation-ransom__item calculation-ransom__item2" id="block2"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__input">
+                     <p class="calculation-ransom__subtitle">Узнайте примерную стоимость недвижимости при срочном выкупе
+                     </p>
+
+                     <h3>Какая площадь комнаты?</h3>
+                     <input type="text" name="square" placeholder="Напишите точную площадь">
+                  </div>
+                  <div class="calculation-ransom__item-buttons">
+                     <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                           src="images/calculation-ransom2.png" alt="Картинка">
+                     </button>
+                     <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                  </div>
+                  <div class="calculation-ransom__percentage-readiness">
+                     <p>Готово 33%</p>
+                     <div class="calculation-ransom__percentage-readiness-wrapper">
+                        <div class="calculation-ransom__percentage-readiness-item2"></div>
+                     </div>
+                     <div class="calculation-ransom__percentage-readiness-buttons">
+                        <button type="button" class="calculation-ransom__item-button3" onclick="showBlock(1)"></button>
+                        <button type="button" class="calculation-ransom__item-button4" onclick="showBlock(3)">Далее<img
+                              src="images/services-link1.png"><img src="images/services-link2.png"><img
+                              src="images/services-link3.png"></button>
+                     </div>
+                  </div>
+               </li>
+               <li class="calculation-ransom__item" id="block3"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__radio">
+                     <p class="calculation-ransom__subtitle">Узнайте примерную стоимость недвижимости при срочном выкупе
+                     </p>
+
+                     <h3>По какой причине вам необходим срочный выкуп комнаты?</h3>
+                     <ul class="calculation-ransom__radio-wrapper">
+                        <li>
+                           <label for="reason1">
+                              <input type="radio" value="1" name="reason" id="reason1" checked>
+                              <span>Получение наличных денег максимально быстро</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason2">
+                              <input type="radio" value="2" name="reason" id="reason2">
+                              <span>Переезд/Смена места жительства</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason3">
+                              <input type="radio" value="3" name="reason" id="reason3">
+                              <span>Раздел имущества (развод, наследство и т.д.)</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason4">
+                              <input type="radio" value="4" name="reason" id="reason4">
+                              <span>Закрыть задолженности</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason5">
+                              <input type="radio" value="5" name="reason" id="reason5">
+                              <span>Другая причина</span>
+                           </label>
+                        </li>
+                     </ul>
+                     <div class="calculation-ransom__item-buttons">
+                        <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                              src="images/calculation-ransom1.png" alt="Картинка">
+                        </button>
+                        <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                     </div>
+
+                     <div class="calculation-ransom__percentage-readiness">
+                        <p>Готово 50%</p>
+                        <div class="calculation-ransom__percentage-readiness-wrapper">
+                           <div class="calculation-ransom__percentage-readiness-item3"></div>
+                        </div>
+                        <div class="calculation-ransom__percentage-readiness-buttons">
+                           <button type="button" onclick="showBlock(2)"
+                              class="calculation-ransom__item-button3"></button>
+                           <button type="button" onclick="showBlock(4)"
+                              class="calculation-ransom__item-button4">Далее<img src="images/services-link1.png"><img
+                                 src="images/services-link2.png"><img src="images/services-link3.png"></button>
+                        </div>
+                     </div>
+                  </div>
+
+               </li>
+               <li class="calculation-ransom__item" id="block4"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__radio">
+                     <p class="calculation-ransom__subtitle">Узнайте примерную стоимость недвижимости при срочном выкупе
+                     </p>
+
+                     <h3>В каком состоянии ваша комната?</h3>
+                     <ul class="calculation-ransom__radio-wrapper">
+                        <li>
+                           <label for="condition1">
+                              <input type="radio" value="1" name="condition" id="condition1" checked>
+                              <span>После ремонта, хорошее состояние</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="condition2">
+                              <input type="radio" value="2" name="condition" id="condition2">
+                              <span>Требуется косметический ремонт</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="condition3">
+                              <input type="radio" value="3" name="condition" id="condition3">
+                              <span>Требуется капитальный ремонт</span>
+                           </label>
+                        </li>
+
+                     </ul>
+                     <div class="calculation-ransom__item-buttons">
+                        <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                              src="images/calculation-ransom1.png" alt="Картинка">
+                        </button>
+                        <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                     </div>
+
+                     <div class="calculation-ransom__percentage-readiness">
+                        <p>Готово 66%</p>
+                        <div class="calculation-ransom__percentage-readiness-wrapper">
+                           <div class="calculation-ransom__percentage-readiness-item4"></div>
+                        </div>
+                        <div class="calculation-ransom__percentage-readiness-buttons">
+                           <button type="button" onclick="showBlock(3)"
+                              class="calculation-ransom__item-button3"></button>
+                           <button type="button" onclick="showBlock(5)"
+                              class="calculation-ransom__item-button4">Далее<img src="images/services-link1.png"><img
+                                 src="images/services-link2.png"><img src="images/services-link3.png"></button>
+                        </div>
+                     </div>
+                  </div>
+
+               </li>
+               <li class="calculation-ransom__item" id="block5"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__radio">
+                     <p class="calculation-ransom__subtitle">Узнайте примерную стоимость недвижимости при срочном выкупе
+                     </p>
+
+                     <h3>Когда вам необходимо получить деньги за комнату?</h3>
+                     <ul class="calculation-ransom__radio-wrapper">
+                        <li>
+                           <label for="date1">
+                              <input type="radio" value="1" name="date" id="date1" checked>
+                              <span>В ближайшие 24-48 часов</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="date2">
+                              <input type="radio" value="2" name="date" id="date2">
+                              <span>В течение 3-5 дней</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="date3">
+                              <input type="radio" value="3" name="date" id="date3">
+                              <span>В течение 7-10 дней</span>
+                           </label>
+                        </li>
+
+                     </ul>
+                     <div class="calculation-ransom__item-buttons">
+                        <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                              src="images/calculation-ransom1.png" alt="Картинка">
+                        </button>
+                        <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                     </div>
+
+                     <div class="calculation-ransom__percentage-readiness">
+                        <p>Готово 83%</p>
+                        <div class="calculation-ransom__percentage-readiness-wrapper">
+                           <div class="calculation-ransom__percentage-readiness-item5"></div>
+                        </div>
+                        <div class="calculation-ransom__percentage-readiness-buttons">
+                           <button type="button" onclick="showBlock(4)"
+                              class="calculation-ransom__item-button3"></button>
+                           <button type="button" onclick="showBlock(6)"
+                              class="calculation-ransom__item-button4">Далее<img src="images/services-link1.png"><img
+                                 src="images/services-link2.png"><img src="images/services-link3.png"></button>
+                        </div>
+                     </div>
+                  </div>
+
+               </li>
+               <li class="calculation-ransom__item calculation-ransom__item3" id="block6">
+                  <p class="calculation-ransom__subtitle">Спасибо, остался последний вопрос!</p>
+                  <h3>Оставьте контактные данные, и мы вышлем вам примерную стоимость выкупа вашей комнаты</h3>
+                  <p class="calculation-ransom__subtitle">Расскажем все детали выкупа и ответим на вопросы</p>
+                  <img class="calculation-ransom__subtitle-img" src="images/calculation-ransom3.png" alt="Картинка">
+                  <div class="calculation-ransom__result-inputs">
+                     <img class="calculation-ransom__result-inputs-img" src="images/calculation-ransom4.png"
+                        alt="Картинка">
+                     <p>Введите имя</p>
+                     <input type="text" placeholder="Например, Иван">
+                     <p>Введите номер</p>
+                     <input type="tel" placeholder="+7 (___)-__-__">
+                     <button type="submit" onclick="showBlock(1)">Узнать сумму выкупа</button>
+                  </div>
+                  <div class="calculation-ransom__result-buttons">
+                     <button type="button" class="calculation-ransom__result-button1">Консультация юриста </button>
+                     <button type="button" class="calculation-ransom__result-button2">Примерная сумма выкупа</button>
+                  </div>
+               </li>
+            </ul>
+         </form>
+      </div>
+   </section>
+   <section class="openly">
+      <div class="openly__container container">
+         <h2 class="openly__title title-bold">Не скрываем ни единого нюанса - работаем открыто и по договору</h2>
+         <p class="openly__subtitle">За 4 года наработали идеальную репутацию перед клиентами и банками</p>
+         <div class="openly__wrapper">
+            <div class="openly__picture"
+               style="background-image: url('images/openly1.png'),url('images/openly2.png') ;">
+
+            </div>
+            <ul class="openly__content">
+               <li class="openly__item">
+                  <p class="openly__item-quantity">700+</p>
+                  <p class="openly__item-text">Клиентов обратились к нам за помощью</p>
+               </li>
+               <li class="openly__item">
+                  <p class="openly__item-quantity">378</p>
+                  <p class="openly__item-text">Из них действующих бизнесов</p>
+               </li>
+               <li class="openly__item">
+                  <p class="openly__item-quantity">3241</p>
+                  <p class="openly__item-text">Заключено договоров</p>
+               </li>
+               <li class="openly__item">
+                  <p class="openly__item-quantity">5 млрд ₽</p>
+                  <p class="openly__item-text">Выдано кредитов за 4 года</p>
+               </li>
+               <li class="openly__item">
+                  <p class="openly__item-quantity">25 млн ₽</p>
+                  <p class="openly__item-text">Самая крупная сделка</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="partners">
+
+      <h2 class="partners__title">Наши банки-партнеры</h2>
+      <div class="partners__wrapper">
+         <ul class="partners__track">
+            <!-- <li class="partners__item"><img src="images/bank1.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank2.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank3.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank4.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank5.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank6.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank7.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank8.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank9.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank1.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank2.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank3.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank4.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank5.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank6.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank7.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank8.png" alt="банк"></li>
+            <li class="partners__item"><img src="images/bank9.png" alt="банк"></li>-->
+            <li class="partners__item" style="background-image: url(images/bank1.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank2.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank3.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank4.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank5.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank6.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank7.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank8.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank9.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank1.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank2.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank3.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank4.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank5.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank6.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank7.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank8.png);"></li>
+            <li class="partners__item" style="background-image: url(images/bank9.png);"></li>
+         </ul>
+      </div>
+
+   </section>
+   <section class="certificates">
+      <div class="certificates__container container">
+         <div class="certificates__title">Наши сертификаты</div>
+         <div class="certificates-slider swiper">
+            <div class="certificates-slider__wrapper swiper-wrapper">
+               <div class="certificates-slider__slide swiper-slide">
+                  <img src="images/certificates1.png" alt="Сертификат">
+               </div>
+               <div class="certificates-slider__slide swiper-slide">
+                  <img src="images/certificates2.png" alt="Сертификат">
+               </div>
+               <div class="certificates-slider__slide swiper-slide">
+                  <img src="images/certificates3.png" alt="Сертификат">
+               </div>
+               <div class="certificates-slider__slide swiper-slide">
+                  <img src="images/certificates1.png" alt="Сертификат">
+               </div>
+               <div class="certificates-slider__slide swiper-slide">
+                  <img src="images/certificates2.png" alt="Сертификат">
+               </div>
+               <div class="certificates-slider__slide swiper-slide">
+                  <img src="images/certificates3.png" alt="Сертификат">
+               </div>
+
+            </div>
+
+         </div>
+         <div class="certificates-slider__buttons">
+            <div id="certificatesPrev" class="certificates-button-prev"><img src="images/arrow1.png"></div>
+            <div id="certificatesNext" class="certificates-button-next"><img src="images/arrow2.png"></div>
+         </div>
+      </div>
+   </section>
+   <section class="plan">
+      <div class="plan__container container">
+         <div class="plan__header">
+            <h2 class="plan__title title-light">Безопасный процесс выкупа без обмана и подводных камней
+            </h2>
+            <div class="plan__info">
+               <img src="images/plan-info.png" alt="Фото">
+               <p>Ваши интересы перед <br>банками будет представлять <br><span>личный менеджер</span></p>
+            </div>
+         </div>
+         <div class="plan__wrapper">
+            <div class="plan__item1 application-btn-trigger">
+               <div class="plan__number1"><img class="p4" src="images/line4.png">01</div>
+               <div class="plan__img"><img src="images/plan1.png" alt="Картинка"></div>
+               <p class="plan__text">Вы оставляете заявку на нашем сайте</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1"><img class="p5" src="images/line5.png">02</div>
+               <div class="plan__img"><img src="images/plan2.png" alt="Картинка"></div>
+               <p class="plan__text">Мы делаем предварительный расчет рыночной стоимости вашей комнаты</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1">03</div>
+               <div class="plan__img"><img src="images/plan3.png" alt="Картинка"></div>
+               <p class="plan__text">Если требуется уточнение деталей, оценщик выезжает на объект для осмотра и
+                  составления полного отчета об оценке</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1"><img class="p4" src="images/line4.png">04</div>
+               <div class="plan__img"><img src="images/plan5.png" alt="Картинка"></div>
+               <p class="plan__text">Мы делаем вам финальное предложение с указанием суммы выкупа от 90% рыночной
+                  стоимости</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1"><img class="p5" src="images/line5.png">05</div>
+               <div class="plan__img"><img src="images/plan6.png" alt="Картинка"></div>
+               <p class="plan__text">В случае вашего согласия оформляем необходимые документы для нотариуса</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1">06</div>
+               <div class="plan__img"><img src="images/plan7.png" alt="Картинка"></div>
+               <p class="plan__text">Передаете права собственности у нотариуса и сразу после этого мы производим полную
+                  оплату наличными или на ваш счет</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="reviews">
+      <div class="reviews__container container">
+         <div class="reviews__header">
+            <h2>За 4 года работы более 100 положительных отзывов</h2>
+            <div class="reviews__block jandex-karti-reiting">
+               <img src="images/jandex-karti.png" alt="">
+               <img src="images/reiting5.0.png" alt="">
+            </div>
+         </div>
+         <div class="reviews-slider swiper">
+            <div class="reviews-slider__wrapper swiper-wrapper">
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__slide-header">
+                     <div class="reviews-slider__slide-foto" style="background-image: url(images/d.jpg);">
+                     </div>
+                     <div class="reviews-slider__slide-name">
+                        <h3>Дарья</h3>
+                        <p>7 ноября 1924</p>
+                     </div>
+                  </div>
+                  <div class="reviews-slider__slide-reiting">
+                     <img src="images/reating.png"><img src="images/reating.png"><img src="images/reating.png"><img
+                        src="images/reating.png"><img src="images/reating.png">
+                  </div>
+                  <div class="reviews-slider__slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Eius
+                     est, cupiditate sed molestias autem optio tempore neque libero explicabo nam dignissimos itaque
+                     quibusdam recusandae, quia quisquam repellendus aliquam aliquid voluptatibus.
+                  </div>
+               </div>
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__slide-header">
+                     <div class="reviews-slider__slide-foto" style="background-image: url(images/d1.jpg);">
+                     </div>
+                     <div class="reviews-slider__slide-name">
+                        <h3>Мария</h3>
+                        <p>7 сентября 1925</p>
+                     </div>
+                  </div>
+                  <div class="reviews-slider__slide-reiting">
+                     <img src="images/reating.png"><img src="images/reating.png"><img src="images/reating.png"><img
+                        src="images/reating.png"><img src="images/reating.png">
+                  </div>
+                  <div class="reviews-slider__slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Eius
+                     est, cupiditate sed molestias autem optio tempore neque libero explicabo nam dignissimos itaque
+                     quibusdam recusandae, quia quisquam repellendus aliquam aliquid voluptatibus.
+                  </div>
+               </div>
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__slide-header">
+                     <div class="reviews-slider__slide-foto" style="background-image: url(images/d2.jpg);">
+                     </div>
+                     <div class="reviews-slider__slide-name">
+                        <h3>Ольга</h3>
+                        <p>10 ноября 1925</p>
+                     </div>
+                  </div>
+                  <div class="reviews-slider__slide-reiting">
+                     <img src="images/reating.png"><img src="images/reating.png"><img src="images/reating.png"><img
+                        src="images/reating.png"><img src="images/reating.png">
+                  </div>
+                  <div class="reviews-slider__slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Eius
+                     est, cupiditate sed molestias autem optio tempore neque libero explicabo nam dignissimos itaque
+                     quibusdam recusandae, quia quisquam repellendus aliquam aliquid voluptatibus.
+                  </div>
+               </div>
+               <div class="reviews-slider__slide swiper-slide">
+                  <div class="reviews-slider__slide-header">
+
+                     <div class="reviews-slider__slide-foto" style="background-image: url(images/d2.jpg);">
+
+                     </div>
+                     <div class="reviews-slider__slide-name">
+                        <h3>Виктория</h3>
+                        <p>1 августа 1925</p>
+                     </div>
+                  </div>
+                  <div class="reviews-slider__slide-reiting">
+                     <img src="images/reating.png"><img src="images/reating.png"><img src="images/reating.png"><img
+                        src="images/reating.png"><img src="images/reating.png">
+                  </div>
+                  <div class="reviews-slider__slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Eius
+                     est, cupiditate sed molestias autem optio tempore neque libero explicabo nam dignissimos itaque
+                     quibusdam recusandae, quia quisquam repellendus aliquam aliquid voluptatibus.
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+         <div class="reviews-slider__buttons">
+            <div id="reviewsPrev" class="reviews-button-prev"><img src="images/arrow1.png"></div>
+            <div id="reviewsNext" class="reviews-button-next"><img src="images/arrow2.png"></div>
+         </div>
+      </div>
+   </section>
+   <section class="blog">
+      <div class="blog__container container">
+         <h2 class="blog__title">Полезные статьи</h2>
+         <ul class="blog__wrapper">
+            <li class="blog__item">
+               <h3>Онлайн выписка ЕГРН</h3>
+               <p>Как выгрузить онлайн выписку ЕГРН с портала Госуслуг</p>
+               <div class="blog__info">
+                  <p>5 минут на прочтение</p>
+                  <p>11.09.2024</p>
+               </div>
+               <a href="#">Читать<img src="images/services-link1.png"></a>
+            </li>
+            <li class="blog__item">
+               <h3>Онлайн выписка ЕГРН</h3>
+               <p>Как выгрузить онлайн выписку ЕГРН с портала Госуслуг</p>
+               <div class="blog__info">
+                  <p>5 минут на прочтение</p>
+                  <p>11.09.2024</p>
+               </div>
+               <a href="#">Читать<img src="images/services-link1.png"></a>
+            </li>
+            <li class="blog__item">
+               <h3>Онлайн выписка ЕГРН</h3>
+               <p>Как выгрузить онлайн выписку ЕГРН с портала Госуслуг</p>
+               <div class="blog__info">
+                  <p>5 минут на прочтение</p>
+                  <p>11.09.2024</p>
+               </div>
+               <a href="#">Читать<img src="images/services-link1.png"></a>
+            </li>
+         </ul>
+      </div>
+   </section>
+   <section class="answers">
+      <div class="answers__container container">
+         <h2 class="answers__title">Часто задаваемые вопросы</h2>
+         <div class="answers__wrapper">
+
+            <div class="accordion" id="accordion">
+               <div class="accordion-item">
+                  <div class="accordion-header">
+                     <h3>Зачем мне получать кредит через вас, если у меня хорошая кредитная история и не было
+                        отказов?
+                     </h3>
+                     <div class="accordion-icon"><img src="images/accordion-icon.png"></div>
+                  </div>
+                  <div class="accordion-content">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rem, consequuntur deleniti
+                        delectus dolorum ex ipsum tempore fugiat incidunt perspiciatis quos cupiditate. Pariatur
+                        eaque
+                        deserunt odio nemo dolore. Autem, in!</p>
+                  </div>
+               </div>
+
+               <div class="accordion-item">
+                  <div class="accordion-header">
+                     <h3>Как исправить кредитную историю?</h3>
+                     <div class="accordion-icon"><img src="images/accordion-icon.png"></div>
+                  </div>
+                  <div class="accordion-content">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rem, consequuntur deleniti
+                        delectus dolorum ex ipsum tempore fugiat incidunt perspiciatis quos cupiditate. Pariatur
+                        eaque
+                        deserunt odio nemo dolore. Autem, in!</p>
+                  </div>
+               </div>
+
+               <div class="accordion-item">
+                  <div class="accordion-header">
+                     <h3>Мне отказали все банки. Сможете мне помочь?</h3>
+                     <div class="accordion-icon"><img src="images/accordion-icon.png"></div>
+                  </div>
+                  <div class="accordion-content">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rem, consequuntur deleniti
+                        delectus dolorum ex ipsum tempore fugiat incidunt perspiciatis quos cupiditate. Pariatur
+                        eaque
+                        deserunt odio nemo dolore. Autem, in!</p>
+                  </div>
+               </div>
+
+               <div class="accordion-item">
+                  <div class="accordion-header">
+                     <h3>В какой момент нужно оплатить ваши услуги?</h3>
+                     <div class="accordion-icon"><img src="images/accordion-icon.png"></div>
+                  </div>
+                  <div class="accordion-content">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rem, consequuntur deleniti
+                        delectus dolorum ex ipsum tempore fugiat incidunt perspiciatis quos cupiditate. Pariatur
+                        eaque
+                        deserunt odio nemo dolore. Autem, in!</p>
+                  </div>
+               </div>
+
+               <div class="accordion-item">
+                  <div class="accordion-header">
+                     <h3>Как не попасться на недобросовестного брокера?</h3>
+                     <div class="accordion-icon"><img src="images/accordion-icon.png"></div>
+                  </div>
+                  <div class="accordion-content">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rem, consequuntur deleniti
+                        delectus dolorum ex ipsum tempore fugiat incidunt perspiciatis quos cupiditate. Pariatur
+                        eaque
+                        deserunt odio nemo dolore. Autem, in!</p>
+                  </div>
+               </div>
+            </div>
+            <div class="answers__img"
+               style="background-image: url('images/accordion-bg.png'); background-position: right bottom; background-size: cover; background-repeat: no-repeat;">
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
+   <section class="business-options">
+      <div class="business-options__container container">
+         <h2 class="business-options__title title-bold">Другие услуги срочного выкупа</h2>
+         <div class="business-options-slider swiper">
+            <div class="business-options-slider__wrapper swiper-wrapper">
+
+               <div class="business-options-slider__slide swiper-slide">
+                  <h3 class="business-options-slider__title">Срочный выкуп квартиры</h3>
+                  <div class="business-options-slider__info">
+                     <div class="business-options-slider__info-item">
+                        <h4>Процент выкупа</h4>
+                        <p>До 90% рыночной стоимости</p>
+                     </div>
+                     <div class="business-options-slider__info-item">
+                        <h4>Сроки выкупа</h4>
+                        <p>До 3х дней</p>
+                     </div>
+                  </div>
+                  <div class="business-options-slider__box">
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options1.png" alt="Картинка">
+                        <p>Аванс в день обращения</p>
+                     </div>
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options2.png" alt="Картинка">
+                        <p>Недвижимость в любом состоянии</p>
+                     </div>
+                  </div>
+                  <button class="business-options-slider__button">Подробнее<img src="images/services-link1.png"><img
+                        src="images/services-link2.png"><img src="images/services-link3.png"></button>
+               </div>
+               <div class="business-options-slider__slide swiper-slide">
+                  <h3 class="business-options-slider__title">Срочный выкуп комнаты</h3>
+                  <div class="business-options-slider__info">
+                     <div class="business-options-slider__info-item">
+                        <h4>Процент выкупа</h4>
+                        <p>До 90% рыночной стоимости</p>
+                     </div>
+                     <div class="business-options-slider__info-item">
+                        <h4>Сроки выкупа</h4>
+                        <p>До 3х дней</p>
+                     </div>
+                  </div>
+                  <div class="business-options-slider__box">
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options1.png" alt="Картинка">
+                        <p>Аванс в день обращения</p>
+                     </div>
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options2.png" alt="Картинка">
+                        <p>Недвижимость в любом состоянии</p>
+                     </div>
+                  </div>
+                  <button class="business-options-slider__button">Подробнее<img src="images/services-link1.png"><img
+                        src="images/services-link2.png"><img src="images/services-link3.png"></button>
+               </div>
+               <div class="business-options-slider__slide swiper-slide">
+                  <h3 class="business-options-slider__title">Срочный выкуп квартиры</h3>
+                  <div class="business-options-slider__info">
+                     <div class="business-options-slider__info-item">
+                        <h4>Процент выкупа</h4>
+                        <p>До 90% рыночной стоимости</p>
+                     </div>
+                     <div class="business-options-slider__info-item">
+                        <h4>Сроки выкупа</h4>
+                        <p>До 3х дней</p>
+                     </div>
+                  </div>
+                  <div class="business-options-slider__box">
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options1.png" alt="Картинка">
+                        <p>Аванс в день обращения</p>
+                     </div>
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options2.png" alt="Картинка">
+                        <p>Недвижимость в любом состоянии</p>
+                     </div>
+                  </div>
+                  <button class="business-options-slider__button">Подробнее<img src="images/services-link1.png"><img
+                        src="images/services-link2.png"><img src="images/services-link3.png"></button>
+               </div>
+               <div class="business-options-slider__slide swiper-slide">
+                  <h3 class="business-options-slider__title">Срочный выкуп комнаты</h3>
+                  <div class="business-options-slider__info">
+                     <div class="business-options-slider__info-item">
+                        <h4>Процент выкупа</h4>
+                        <p>До 90% рыночной стоимости</p>
+                     </div>
+                     <div class="business-options-slider__info-item">
+                        <h4>Сроки выкупа</h4>
+                        <p>До 3х дней</p>
+                     </div>
+                  </div>
+                  <div class="business-options-slider__box">
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options1.png" alt="Картинка">
+                        <p>Аванс в день обращения</p>
+                     </div>
+                     <div class="business-options-slider__box-item">
+                        <img src="images/business-options2.png" alt="Картинка">
+                        <p>Недвижимость в любом состоянии</p>
+                     </div>
+                  </div>
+                  <button class="business-options-slider__button">Подробнее<img src="images/services-link1.png"><img
+                        src="images/services-link2.png"><img src="images/services-link3.png"></button>
+               </div>
+
+            </div>
+
+         </div>
+         <div class="business-options-slider__buttons">
+            <div id="businessOptionsPrev" class="business-options-button-prev"><img src="images/arrow1.png"></div>
+            <div id="businessOptionsNext" class="business-options-button-next"><img src="images/arrow2.png"></div>
+         </div>
+      </div>
+   </section>
+   <footer class="footer">
+      <div class="footer__top">
+         <div class="footer__top-container container">
+            <a href="index.html"><img src="images/footer-logo.png" alt="логотип"></a>
+            <ul class="footer__top-links">
+               <li><a href="#">Преимущества</a></li>
+               <li><a href="#">Услуги</a></li>
+               <li><a href="#">Схема работы</a></li>
+               <li><a href="#">Отзывы</a></li>
+               <li><a href="#">FAQ</a></li>
+               <li><a href="#">Блог</a></li>
+               <li><a href="#">Сотрудничество</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+            <button class="application-btn-trigger">Оставить заявку</button>
+         </div>
+      </div>
+      <div class="footer__content">
+         <div class="footer__content-container container">
+            <ul class="footer__nav">
+               <li class="footer__nav-item">
+                  <h3 class="footer__nav-title">Кредиты для юридических лиц</h3>
+                  <ul class="footer__nav-list">
+                     <li><a href="#">Кредиты для юр. лиц без залога</a></li>
+                     <li><a href="#">Кредиты для юр. лиц с залогом</a></li>
+                     <li><a href="#">Кредиты для ИП без залога</a></li>
+                     <li><a href="#">Кредиты для ИП с залогом</a></li>
+                     <li><a href="#">Кредиты для ИП и юр лиц под залог коммерческой недвижимости</a></li>
+                  </ul>
+               </li>
+               <li class="footer__nav-item">
+                  <h3 class="footer__nav-title">Кредиты для частных лиц</h3>
+                  <ul class="footer__nav-list">
+                     <li><a href="#">Банковское кредитование физ лиц под залог квартиры</a></li>
+                     <li><a href="#">Банковское кредитование физ лиц под залог загородной недвижимости</a></li>
+                     <li><a href="#">Банковское кредитование физ лиц под залог машиноместа</a></li>
+                     <li><a href="#">Банковское кредитование физ лиц под залог комнаты</a></li>
+                  </ul>
+               </li>
+               <li class="footer__nav-item">
+                  <h3 class="footer__nav-title">Кредиты от частного инвестора</h3>
+                  <ul class="footer__nav-list">
+                     <li><a href="#">Кредитование под залог квартиры от частного инвестора</a></li>
+                     <li><a href="#">Кредитования под залог загородной недвижимости от частного инвестора</a></li>
+                     <li><a href="#">Кредитование под залог машиноместа от частного инвестора</a></li>
+                     <li><a href="#">Кредитование под залог комнаты от частного инвестора</a></li>
+                  </ul>
+               </li>
+               <li class="footer__nav-item">
+                  <h3 class="footer__nav-title">Срочный выкуп</h3>
+                  <ul class="footer__nav-list">
+                     <li><a href="#">Срочный выкуп квартиры</a></li>
+                     <li><a href="#">Срочный выкуп загородной недвижимости</a></li>
+                     <li><a href="#">Срочный выкуп машиноместа</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <div class="footer__wrapper">
+               <ul class="footer__info1">
+                  <li class="footer__contacts-item">
+                     <a href="#">Политика конфиденциальности</a>
+                  </li>
+                  <li class="footer__contacts-item">
+                     <a href="#">Пользовательское соглашение</a>
+                  </li>
+                  <li class="footer__contacts-item">
+                     <a href="#">Согласие на обработку персональных данных</a>
+                  </li>
+                  <li class="footer__contacts-item">
+                     <a href="#">Уведомление об использовании cookie</a>
+                  </li>
+               </ul>
+               <ul class="footer__contacts">
+
+                  <li class="footer__contacts-item">
+                     <a href="#">+7 (989) 209-74-50</a>
+                     <a href="#"><img src="images/telegram.png" alt="telegram"></a>
+                     <a href="#"><img src="images/whatsapp2.png" alt="whatsapp"></a>
+                  </li>
+                  <li class="footer__contacts-item">
+                     <a href="#">info@whitecliff.ru</a>
+                  </li>
+                  <li class="footer__contacts-item">
+                     <p>Москва, Большая Садовая ул., 5, корп. 1</p>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__info">
+               <p>Все материалы, размещенные на сайте WhiteCliff.ru имеют информационный характер и защищены
+                  законодательством об авторском праве. </p>
+               <p>Данный сайт является информационным ресурсом и оказывает помощь
+                  в получении кредита через банковские или финансовые организации, осуществляющие банковскую
+                  деятельность на территории Российской Федерации.</p>
+               <p>Заполняя любую форму на данном сайте, вы
+                  соглашаетесь с правилами обработки персональных данных. ООО “Белый утес” не является финансовой или
+                  микрофинансовой организацией, не оказывает услуг по оформлению и предоставлению населению микрозаймов,
+                  кредитов и других финансовых услуг, работает на основании договоров о сотрудничестве с Банками
+                  партнерами, РНКО, НДКО, КПК, кредитными союзами, инвестиционными фондами</p>
+            </div>
+            <p class="footer__info2">Whitecliff.ru 2018-2024 Все права защищены.</p>
+         </div>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="burger.js"></script>
+   <script src="script.js"></script>
+   <script src="calculator.js"></script>
+   <script src="script-blok.js"></script>
+
+</body>
+
+</html>

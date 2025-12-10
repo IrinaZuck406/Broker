@@ -42,7 +42,7 @@ window.addEventListener('resize', () => {
    }
 });
 /*------------Слайдер "Другие варианты для бизнеса"---*/
-const certificatesSlider = new Swiper('.business-options-slider', {
+const certificatSlider = new Swiper('.business-options-slider', {
    navigation: {
       nextEl: '.business-options-button-prev',
       prevEl: ' .business-options-button-next'
@@ -73,15 +73,15 @@ const certificatesSlider = new Swiper('.business-options-slider', {
 
    },
 });
-const swiperPrev = document.getElementById('businessOptionsPrev');
-const swiperNext = document.getElementById('businessOptionsNext');
-if (swiperPrev) {
-   swiperPrev.addEventListener('click', () => {
-      certificatesSlider.slidePrev();
+const swiperPrev1 = document.getElementById('businessOptionsPrev');
+const swiperNext1 = document.getElementById('businessOptionsNext');
+if (swiperPrev1) {
+   swiperPrev1.addEventListener('click', () => {
+      certificatSlider.slidePrev();
    });
 }
-if (swiperNext) {
-   swiperNext.addEventListener('click', () => {
-      certificatesSlider.slideNext();
+if (swiperNext1) {
+   swiperNext1.addEventListener('click', () => {
+      certificatSlider.slideNext();
    });
 }

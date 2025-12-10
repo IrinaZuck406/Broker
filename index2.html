@@ -165,6 +165,7 @@
          </ul>
       </div>
    </section>
+   <!----------------------------------------------------------------------------------------------------------------------------->
    <section class="calculation-ransom">
       <div class="calculation-ransom__container container">
          <h2 class="calculation-ransom__title title-bold">Пройдите тест и узнайте примерную сумму выкупа квартиры
@@ -263,7 +264,171 @@
                      </div>
                   </div>
                </li>
-               <li class="calculation-ransom__item calculation-ransom__item3" id="block3">
+               <li class="calculation-ransom__item" id="block3"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__radio">
+                     <p class="calculation-ransom__subtitle">По какой причине вам необходим срочный выкуп квартиры?
+                     </p>
+
+                     <h3>Сколько комнат в квартире?</h3>
+                     <ul class="calculation-ransom__radio-wrapper">
+                        <li>
+                           <label for="reason1">
+                              <input type="radio" value="1" name="reason" id="reason1" checked>
+                              <span>Получение наличных денег максимально быстро</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason2">
+                              <input type="radio" value="2" name="reason" id="reason2">
+                              <span>Переезд/Смена места жительства</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason3">
+                              <input type="radio" value="3" name="reason" id="reason3">
+                              <span>Раздел имущества (развод, наследство и т.д.)</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason4">
+                              <input type="radio" value="4" name="reason" id="reason4">
+                              <span>Закрыть задолженности</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="reason5">
+                              <input type="radio" value="5" name="reason" id="reason5">
+                              <span>Другая причина</span>
+                           </label>
+                        </li>
+                     </ul>
+                     <div class="calculation-ransom__item-buttons">
+                        <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                              src="images/calculation-ransom1.png" alt="Картинка">
+                        </button>
+                        <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                     </div>
+
+                     <div class="calculation-ransom__percentage-readiness">
+                        <p>Готово 50%</p>
+                        <div class="calculation-ransom__percentage-readiness-wrapper">
+                           <div class="calculation-ransom__percentage-readiness-item3"></div>
+                        </div>
+                        <div class="calculation-ransom__percentage-readiness-buttons">
+                           <button type="button" onclick="showBlock(2)"
+                              class="calculation-ransom__item-button3"></button>
+                           <button type="button" onclick="showBlock(4)"
+                              class="calculation-ransom__item-button4">Далее<img src="images/services-link1.png"><img
+                                 src="images/services-link2.png"><img src="images/services-link3.png"></button>
+                        </div>
+                     </div>
+                  </div>
+
+               </li>
+               <li class="calculation-ransom__item " id="block4"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__radio">
+                     <p class="calculation-ransom__subtitle">Узнайте примерную стоимость недвижимости при срочном выкупе
+                     </p>
+
+                     <h3>В каком состоянии ваша квартира?</h3>
+                     <ul class="calculation-ransom__radio-wrapper">
+                        <li>
+                           <label for="condition1">
+                              <input type="radio" value="1" name="condition" id="condition1" checked>
+                              <span>После ремонта, хорошее состояние</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="condition2">
+                              <input type="radio" value="2" name="condition" id="condition2">
+                              <span>Требуется косметический ремонт</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="condition3">
+                              <input type="radio" value="3" name="condition" id="condition3">
+                              <span>Требуется капитальный ремонт</span>
+                           </label>
+                        </li>
+
+                     </ul>
+                     <div class="calculation-ransom__item-buttons">
+                        <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                              src="images/calculation-ransom1.png" alt="Картинка">
+                        </button>
+                        <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                     </div>
+
+                     <div class="calculation-ransom__percentage-readiness">
+                        <p>Готово 66%</p>
+                        <div class="calculation-ransom__percentage-readiness-wrapper">
+                           <div class="calculation-ransom__percentage-readiness-item4"></div>
+                        </div>
+                        <div class="calculation-ransom__percentage-readiness-buttons">
+                           <button type="button" onclick="showBlock(3)"
+                              class="calculation-ransom__item-button3"></button>
+                           <button type="button" onclick="showBlock(5)"
+                              class="calculation-ransom__item-button4">Далее<img src="images/services-link1.png"><img
+                                 src="images/services-link2.png"><img src="images/services-link3.png"></button>
+                        </div>
+                     </div>
+                  </div>
+
+               </li>
+               <li class="calculation-ransom__item" id="block5"
+                  style="background-image: url(images/calculation-ransom-bg.png);">
+                  <div class="calculation-ransom__radio">
+                     <p class="calculation-ransom__subtitle">Узнайте примерную стоимость недвижимости при срочном выкупе
+                     </p>
+
+                     <h3>Когда вам необходимо получить деньги за квартиру?</h3>
+                     <ul class="calculation-ransom__radio-wrapper">
+                        <li>
+                           <label for="date1">
+                              <input type="radio" value="1" name="date" id="date1" checked>
+                              <span>В ближайшие 24-48 часов</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="date2">
+                              <input type="radio" value="2" name="date" id="date2">
+                              <span>В течение 3-5 дней</span>
+                           </label>
+                        </li>
+                        <li>
+                           <label for="date3">
+                              <input type="radio" value="3" name="date" id="date3">
+                              <span>В течение 7-10 дней</span>
+                           </label>
+                        </li>
+
+                     </ul>
+                     <div class="calculation-ransom__item-buttons">
+                        <button type="button" class="calculation-ransom__item-button1">Консультация юриста<img
+                              src="images/calculation-ransom1.png" alt="Картинка">
+                        </button>
+                        <button type="button" class="calculation-ransom__item-button2">Примерная сумма выкупа</button>
+                     </div>
+
+                     <div class="calculation-ransom__percentage-readiness">
+                        <p>Готово 83%</p>
+                        <div class="calculation-ransom__percentage-readiness-wrapper">
+                           <div class="calculation-ransom__percentage-readiness-item5"></div>
+                        </div>
+                        <div class="calculation-ransom__percentage-readiness-buttons">
+                           <button type="button" onclick="showBlock(4)"
+                              class="calculation-ransom__item-button3"></button>
+                           <button type="button" onclick="showBlock(6)"
+                              class="calculation-ransom__item-button4">Далее<img src="images/services-link1.png"><img
+                                 src="images/services-link2.png"><img src="images/services-link3.png"></button>
+                        </div>
+                     </div>
+                  </div>
+
+               </li>
+               <li class="calculation-ransom__item calculation-ransom__item3" id="block6">
                   <p class="calculation-ransom__subtitle">Спасибо, остался последний вопрос!</p>
                   <h3>Оставьте контактные данные, и мы вышлем вам примерную стоимость выкупа вашей квартиры </h3>
                   <p class="calculation-ransom__subtitle">Расскажем все детали выкупа и ответим на вопросы</p>
@@ -286,6 +451,7 @@
          </form>
       </div>
    </section>
+   <!-------------------------------------------------------------------------------------------------------------------------------->
    <section class="business-options">
       <div class="business-options__container container">
          <h2 class="business-options__title title-bold">Другие варианты кредитования для бизнеса</h2>
@@ -437,6 +603,52 @@
             <div class="deposit__item">
                <img src="images/deposit8.png" alt="Картинка">
                <p>Коттедж</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="plan">
+      <div class="plan__container container">
+         <div class="plan__header">
+            <h2 class="plan__title title-light">Вы потратите <span class="title-bold ">всего час</span> своего
+               времени и
+               получите деньги на свой счет <span class="title-bold "> в течение 3-7 дней</span>
+            </h2>
+            <div class="plan__info">
+               <img src="images/plan-info.png" alt="Фото">
+               <p>Ваши интересы перед <br>банками будет представлять <br><span>личный менеджер</span></p>
+            </div>
+         </div>
+         <div class="plan__wrapper">
+            <div class="plan__item1">
+               <div class="plan__number1"><img class="p4" src="images/line4.png">01</div>
+               <div class="plan__img"><img src="images/plan1.png" alt="Картинка"></div>
+               <p class="plan__text">Только после предварительного одобрения вы отправляете нужные документы</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1"><img class="p5" src="images/line5.png">02</div>
+               <div class="plan__img"><img src="images/plan2.png" alt="Картинка"></div>
+               <p class="plan__text">Отправляем заявку в банк и ждем подтверждения</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1">03</div>
+               <div class="plan__img"><img src="images/plan3.png" alt="Картинка"></div>
+               <p class="plan__text">Вы получаете деньги и оплачиваете наши услуги</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1"><img class="p4" src="images/line4.png">04</div>
+               <div class="plan__img"><img src="images/plan5.png" alt="Картинка"></div>
+               <p class="plan__text">Только после предварительного одобрения вы отправляете нужные документы</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1"><img class="p5" src="images/line5.png">05</div>
+               <div class="plan__img"><img src="images/plan6.png" alt="Картинка"></div>
+               <p class="plan__text">Отправляем заявку в банк и ждем подтверждения</p>
+            </div>
+            <div class="plan__item1">
+               <div class="plan__number1">06</div>
+               <div class="plan__img"><img src="images/plan7.png" alt="Картинка"></div>
+               <p class="plan__text">Вы получаете деньги и оплачиваете наши услуги</p>
             </div>
          </div>
       </div>
