@@ -5252,6 +5252,7 @@ textarea:focus {
    font-size: 28px;
    font-size: calc(20px + 8*(100vw - 414px)/986);
    margin-bottom: 30px;
+   text-align: center;
 }
 
 .what-is-bank-guarantee__box-container {
