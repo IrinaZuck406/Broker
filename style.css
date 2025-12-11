@@ -87,6 +87,16 @@ body._lock {
    overflow: hidden;
 }
 
+.application-btn-trigger {
+   cursor: pointer;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+textarea:focus {
+   box-shadow: 5px 5px 10px #002976;
+}
+
 .header__menu-icon {
    display: none;
 }
@@ -293,6 +303,12 @@ body._lock {
    margin-bottom: 25px;
 }
 
+.application-modal__wrapper button:hover {
+   box-shadow: 5px 5px 10px #002976;
+   background-color: #0051FF;
+   color: #002976;
+}
+
 .application-modal__text {
    font-family: 'Gilroy-Light';
    font-size: 16px;
@@ -399,6 +415,12 @@ body._lock {
    background-color: #2da3db;
    padding: 27px 62px;
    border-radius: 35px;
+}
+
+.consultation-modal__content button:hover {
+   box-shadow: 5px 5px 10px #002976;
+   background-color: #0051FF;
+   color: #002976;
 }
 
 .consultation-modal__x {
@@ -609,6 +631,7 @@ body._lock {
 .header__buttons a:nth-child(1):hover {
    background-color: #2aabee;
    color: #002976;
+   box-shadow: 5px 5px 10px #002976;
 }
 
 .header__buttons a:nth-child(1) img {
@@ -629,6 +652,7 @@ body._lock {
 .header__buttons a:nth-child(2):hover {
    background-color: royalblue;
    color: #002976;
+   box-shadow: 5px 5px 10px #002976;
 }
 
 .header__links {
@@ -670,6 +694,10 @@ body._lock {
    height: 52px;
 }
 
+.menu:hover {
+   box-shadow: 5px 5px 10px #002976;
+}
+
 .menu>li {
    float: left;
    width: 111px;
@@ -687,6 +715,7 @@ body._lock {
    transition: all 300ms ease-in-out;
    position: relative;
    z-index: 5;
+
 }
 
 .sub-menu li {
@@ -713,7 +742,7 @@ body._lock {
 
 .sub-menu li:hover {
    background: #0051FF;
-
+   box-shadow: 1px 1px 2px #002976;
 }
 
 .menu>li:hover .sub-menu li {
@@ -862,6 +891,7 @@ body._lock {
 .first-screen__button-1:hover {
    background-color: royalblue;
    color: #002976;
+   box-shadow: 5px 5px 10px #002976;
 }
 
 .first-screen__button-1 img {
@@ -972,6 +1002,7 @@ body._lock {
 .first-screen__button-2:hover {
    background-color: #2aabee;
    color: #002976;
+   box-shadow: 5px 5px 10px #002976;
 }
 
 .first-screen__button-2 img {
@@ -1307,6 +1338,12 @@ body._lock {
    padding-bottom: 23px;
 }
 
+.no-bounce__title {
+   text-align: center;
+   max-width: 90%;
+   margin: 0 auto;
+}
+
 .no-bounce__wrapper {
    display: flex;
    justify-content: space-between;
@@ -1342,6 +1379,7 @@ body._lock {
    font-family: 'Gilroy-ExtraBold';
    font-size: 24px;
    font-size: calc(16px + 8*(100vw - 414px)/986);
+   text-align: center;
    margin-bottom: 15px;
 }
 
@@ -1350,6 +1388,7 @@ body._lock {
    font-size: 20px;
    font-size: calc(12px + 8*(100vw - 414px)/986);
    color: #414141;
+   text-align: center;
 }
 
 .no-bounce__wrapper p span {
@@ -1434,7 +1473,9 @@ body._lock {
 
 .loan-calculator h2 {
    max-width: 1022px;
+   margin: 0 auto;
    margin-bottom: 50px;
+   text-align: center;
 }
 
 .loan-calculator__wrapper {
@@ -1613,6 +1654,14 @@ body._lock {
    font-size: 24px;
    font-size: calc(20px + 4*(100vw - 414px)/986);
    color: #fff;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.loan-calculator__result button:hover {
+   background-color: #2a71f8;
+   color: #002976;
+   box-shadow: 5px 5px 10px #999999;
 }
 
 .loan-calculator__result-img1 {
@@ -1790,7 +1839,7 @@ body._lock {
 .services__tabs-header {
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: flex-start;
 
 }
 
@@ -1823,6 +1872,14 @@ body._lock {
    color: #fff;
    text-align: center;
    margin-bottom: 61px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.services__tabs-title:hover {
+   background-color: #2a71f8;
+   color: #002976;
+   box-shadow: 5px 5px 10px #002976;
 }
 
 .services__tabs-wrapper {
@@ -1930,6 +1987,13 @@ body._lock {
    background-color: #6d9efb;
    margin: 18px auto 0;
    width: 318px;
+   transition: background-color 0.3s ease;
+}
+
+.services__tabs-content a:hover {
+   background-color: royalblue;
+   box-shadow: 5px 5px 10px #002976;
+
 }
 
 .services__tabs-card-bg {
@@ -2106,6 +2170,9 @@ body._lock {
 .principle__title {
    max-width: 1036px;
    margin-bottom: 40px;
+   margin: 0 auto 40px;
+   text-align: center;
+
 }
 
 .principle__wrapper {
@@ -2191,8 +2258,9 @@ body._lock {
 }
 
 .openly__title {
-   margin-bottom: 20px;
    max-width: 1036px;
+   margin: 0 auto 20px;
+   text-align: center;
 }
 
 .openly__subtitle {
@@ -2200,8 +2268,9 @@ body._lock {
    font-size: 26px;
    font-size: calc(14px + 12*(100vw - 414px)/986);
    color: #797979;
-   margin-bottom: 20px;
    max-width: 565px;
+   margin: 0 auto 20px;
+   text-align: center;
 }
 
 .openly__wrapper {
@@ -2428,7 +2497,14 @@ body._lock {
    display: flex;
    justify-content: center;
    align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
 
+.certificates-button-prev:hover,
+.certificates-button-next:hover {
+   background-color: #5465f4;
+   box-shadow: 3px 3px 6px #002976;
 }
 
 @media(min-width:1400px) {
@@ -3009,6 +3085,13 @@ body._lock {
    font-size: 22px;
    font-size: calc(18px + 4*(100vw - 414px)/986);
    color: #fff;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.form__item button:hover {
+   background-color: #2aabee;
+   box-shadow: 5px 5px 10px #002976;
 }
 
 .form__item button img {
@@ -3126,6 +3209,7 @@ body._lock {
       /* width: 200px;*/
       /* height: 40px;*/
       border-radius: 15px;
+
    }
 
    .form__item select {
@@ -3200,6 +3284,14 @@ body._lock {
    display: flex;
    justify-content: center;
    align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.reviews-button-prev:hover,
+.reviews-button-next:hover {
+   background-color: #5465f4;
+   box-shadow: 3px 3px 6px #002976;
 }
 
 .reviews-button-prev img,
@@ -3399,7 +3491,8 @@ body._lock {
    font-family: 'Gilroy-ExtraBold';
    font-size: 46px;
    font-size: calc(24px + 22*(100vw - 414px)/986);
-   margin-bottom: 40px;
+   margin: 0 auto 40px;
+   text-align: center;
 }
 
 .accordion {
@@ -3429,8 +3522,13 @@ body._lock {
    align-items: center;
    gap: 10px;
    margin-bottom: 20px;
+   transition: all 0.3s ease;
 }
 
+.accordion-header:hover {
+   background-color: #2a71f8;
+   box-shadow: 5px 5px 10px #002976;
+}
 
 .accordion-header h3 {
    font-family: 'Gilroy-ExtraBold';
@@ -3512,12 +3610,26 @@ body._lock {
    font-family: 'Gilroy-ExtraBold';
    font-size: 30px;
    font-size: calc(16px + 14*(100vw - 414px)/986);
+   margin: 0 auto 10px;
+   text-align: center;
 }
 
 .consultation1__title {
    max-width: 731px;
    margin-bottom: 25px;
+   margin: 0 auto 25px;
+   text-align: center;
+}
 
+.consultation1 .form__item form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+}
+
+.consultation1 .form__item form input {
+   width: 295px;
 }
 
 @media(min-width:1400px) {
@@ -3573,6 +3685,13 @@ body._lock {
    font-size: 18px;
    font-size: calc(14px + 4*(100vw - 414px)/986);
    color: #fff;
+
+}
+
+.footer__top-links a:hover {
+   color: #1aaaee;
+   text-decoration: underline;
+
 }
 
 .footer__top button {
@@ -3584,8 +3703,14 @@ body._lock {
    font-size: 22px;
    font-size: calc(18px + 4*(100vw - 414px)/986);
    color: #fff;
+   transition: all 0.3s ease;
 }
 
+.footer__top button:hover {
+   background-color: #2aabee;
+   color: #002976;
+   box-shadow: 5px 5px 10px #999999;
+}
 
 .footer__content-container {
    padding-top: 40px;
@@ -3646,6 +3771,12 @@ body._lock {
 
 }
 
+.footer__contacts-item a:hover,
+.footer__info1 li a:hover,
+.footer__nav-list li a:hover {
+   color: #1aaaee;
+   text-decoration: underline;
+}
 
 .footer__contacts-item img {
    width: 30px;
