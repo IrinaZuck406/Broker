@@ -669,6 +669,8 @@ textarea:focus {
    color: #414141;
 }
 
+
+
 .header__links p {
    font-family: 'Gilroy-Light';
    font-size: 18px;
@@ -1473,8 +1475,8 @@ textarea:focus {
 
 .loan-calculator h2 {
    max-width: 1022px;
-   margin: 0 auto;
-   margin-bottom: 50px;
+   margin: 0 auto 50px;
+
    text-align: center;
 }
 
@@ -2572,7 +2574,9 @@ textarea:focus {
 
 .registration-bank-guarantee__title {
    max-width: 860px;
-   margin-bottom: 30px;
+   text-align: center;
+   margin: 0 auto 30px;
+
 }
 
 .plan__info {
@@ -4014,8 +4018,9 @@ textarea:focus {
 }
 
 .loan-cases__title {
-   max-width: 698px;
-   margin-bottom: 43px;
+   max-width: 908px;
+   text-align: center;
+   margin: 0 auto 43px;
 }
 
 .loan-cases__wrapper {
@@ -4066,13 +4071,15 @@ textarea:focus {
 
 .conditions-deposit__title {
    max-width: 1149px;
-   margin-bottom: 45px;
+   text-align: center;
+   margin: 0 auto 45px;
 }
 
 .conditions-deposit__wrapper {
    display: flex;
    justify-content: space-between;
    align-items: stretch;
+   padding-bottom: 20px;
 }
 
 .conditions-deposit__item {
@@ -4129,6 +4136,12 @@ textarea:focus {
    border-radius: 20px;
 }
 
+.conditions-deposit__button:hover {
+   box-shadow: 5px 5px 10px #002976;
+   background-color: #0051FF;
+   color: #002976;
+}
+
 @media(min-width:1400px) {
    .conditions-deposit__item h3 {
       font-size: 30px;
@@ -4180,8 +4193,9 @@ textarea:focus {
 }
 
 .choice-redemption-title {
-   max-width: 760px;
-   margin-bottom: 50px;
+   max-width: 900px;
+   text-align: center;
+   margin: 0 auto 50px;
 }
 
 .choice-redemption__wrapper {
@@ -4282,8 +4296,9 @@ textarea:focus {
 }
 
 .unusual-situations__title {
-   max-width: 764px;
-   margin-bottom: 50px;
+   max-width: 900px;
+   text-align: center;
+   margin: 0 auto 50px;
 }
 
 .unusual-situations__wrapper {
@@ -4687,6 +4702,11 @@ textarea:focus {
    background-color: #2da3db;
 }
 
+.calculation-ransom__item button:hover {
+   box-shadow: 3px 3px 6px #002976;
+   transition: all 0.3s ease;
+}
+
 @media(min-width:1400px) {
    .calculation-ransom__item h3 {
       font-size: 32px;
@@ -4926,6 +4946,13 @@ textarea:focus {
 
 }
 
+.business-options-button-prev:hover,
+.business-options-button-next:hover {
+   box-shadow: 3px 3px 6px #002976;
+   background-color: #5465f4;
+   transform: scale(1.01);
+}
+
 .business-options-slider__title {
    font-family: 'Gilroy-ExtraBold';
    font-size: 28px;
@@ -4988,6 +5015,13 @@ textarea:focus {
    color: #fff;
    margin: 0 auto;
    display: block;
+   transition: all 0.3s ease;
+}
+
+.business-options-slider__button:hover {
+   box-shadow: 3px 3px 6px #002976;
+   background-color: #2a71f8;
+
 }
 
 .business-options-slider__button img {
@@ -5125,6 +5159,12 @@ textarea:focus {
    padding-top: 100px;
 }
 
+.deposit__title {
+   max-width: 900px;
+   text-align: center;
+   margin: 0 auto;
+}
+
 .deposit__wrapper {
    display: flex;
    justify-content: center;
@@ -5188,7 +5228,9 @@ textarea:focus {
 }
 
 .what-is-bank-guarantee__title {
-   margin-bottom: 30px;
+   max-width: 1066px;
+   text-align: center;
+   margin: 0 auto 30px;
 }
 
 .what-is-bank-guarantee__text {
@@ -5313,11 +5355,13 @@ textarea:focus {
 /*---------------------------------------*/
 .conditions-bank-guarantee {
    padding-top: 100px;
+   padding-bottom: 10px;
 }
 
 .conditions-bank-guarantee__title {
-   max-width: 840px;
-   margin-bottom: 65px;
+   max-width: 1100px;
+   text-align: center;
+   margin: 0 auto 65px;
 }
 
 .conditions-bank-guarantee__wrapper {
@@ -5365,6 +5409,12 @@ textarea:focus {
    padding: 20px 30px;
    border-radius: 20px;
    background-color: #2aabee;
+}
+
+.conditions-bank-guarantee__item button:hover {
+   box-shadow: 3px 3px 6px #002976;
+   background-color: #2a71f8;
+   color: #002976;
 }
 
 @media(min-width:1400px) {
@@ -5420,7 +5470,9 @@ textarea:focus {
 
 .choice-bank-guarantee__title {
    max-width: 944px;
-   margin-bottom: 30px;
+   text-align: center;
+   margin: 0 auto 30px;
+
 }
 
 .choice-bank-guarantee__wrapper {
@@ -5493,7 +5545,8 @@ textarea:focus {
 
 .get-approval__title {
    max-width: 750px;
-   margin-bottom: 0;
+   margin-bottom: 30px;
+
 }
 
 .get-approval__box {
@@ -5544,6 +5597,24 @@ textarea:focus {
    width: 455px;
    height: 60px;
    display: block;
+   font-family: 'Gilroy-ExtraBold';
+   color: #fff;
+   font-size: 22px;
+   font-size: calc(18px + 4*(100vw - 414px)/986);
+}
+
+.get-approval button:hover {
+   box-shadow: 3px 3px 6px #002976;
+   background-color: #2a71f8;
+   color: #002976;
+
+
+}
+
+@media(min-width:1400px) {
+   .get-approval button {
+      font-size: 22px;
+   }
 }
 
 @media(max-width:1350px) {
@@ -5583,8 +5654,9 @@ textarea:focus {
 }
 
 .what-is-leasing__title {
-   margin-bottom: 64px;
    max-width: 1066px;
+   text-align: center;
+   margin: 0 auto 64px;
 }
 
 .what-is-leasing__wrapper {
