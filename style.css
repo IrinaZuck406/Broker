@@ -1005,10 +1005,14 @@ textarea:focus {
 }
 
 .first-screen__item-img {
-   min-width: 92px;
+   /*min-width: 92px;*/
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.first-screen__item-img img {
+   width: 85px;
 }
 
 .first-screen__item-text {
@@ -1265,6 +1269,10 @@ textarea:focus {
    .contact-box table {
       line-height: 1.2;
    }
+
+   .first-screen__item-img img {
+      width: 65px;
+   }
 }
 
 @media(max-width:750px) {
@@ -1432,7 +1440,8 @@ textarea:focus {
    position: absolute;
    left: 0;
    bottom: 10px;
-
+   height: 190px;
+   ;
 }
 
 .no-bounce__wrapper li div {
@@ -2039,6 +2048,10 @@ textarea:focus {
    color: #414141;
 }
 
+.services__tabs-card-content2 img {
+   width: 50px;
+}
+
 .services__tabs-content a {
    display: flex;
    justify-content: center;
@@ -2254,7 +2267,8 @@ textarea:focus {
    background-color: #84afff;
    min-height: 250px;
    position: relative;
-   padding: 63px 15px 5px;
+   padding: 67px 15px 10px;
+   overflow: hidden;
 }
 
 .principle__item h3 {
@@ -2272,8 +2286,9 @@ textarea:focus {
 
 .principle__img {
    position: absolute;
-   top: 0px;
-   right: 0px;
+   top: 5px;
+   right: 5px;
+   height: 65px;
 }
 
 .principle__bg {
@@ -4996,6 +5011,10 @@ textarea:focus {
    margin-bottom: 40px;
 }
 
+.business-options-slider__wrapper {
+   padding: 5px 0;
+}
+
 .business-options-slider__slide {
    border-radius: 15px;
    border: 1px solid #2aabee;
@@ -5073,6 +5092,10 @@ textarea:focus {
    justify-content: space-between;
    align-items: center;
    gap: 10px;
+}
+
+.business-options-slider__box-item img {
+   width: 125px;
 }
 
 .business-options-slider__box-item p {
