@@ -48,6 +48,7 @@ const certificatSlider = new Swiper('.business-options-slider', {
       prevEl: ' .business-options-button-next'
    },
 
+
    // Количество слайдов для показа(можно указывать как целые числа, так и дроби например 2.5:
    slidesPerView: 2,
    //Отключение функционала, если слайдов в слайдере меньше, чем кол-во для одновременного показа (чтобы не отключалось ставим auto):
@@ -67,7 +68,7 @@ const certificatSlider = new Swiper('.business-options-slider', {
       320: {
          slidesPerView: 1,
       },
-      960: {
+      800: {
          slidesPerView: 2,
       }
 
@@ -85,3 +86,38 @@ if (swiperNext1) {
       certificatSlider.slideNext();
    });
 }
+// Функция для выравнивания высоты всех слайдов по самому высокому
+function setEqualSlideHeight() {
+   const slides = document.querySelectorAll('.business-options-slider__wrapper .swiper-slide');
+   if (slides.length === 0) return;
+
+   // Сбрасываем высоту, чтобы измерить реальную высоту контента
+   slides.forEach(slide => {
+      slide.style.height = 'auto';
+      slide.style.minHeight = '0';
+   });
+
+   // Находим максимальную высоту
+   let maxHeight = 0;
+   slides.forEach(slide => {
+      const height = slide.scrollHeight;
+      if (height > maxHeight) maxHeight = height;
+   });
+
+   // Устанавливаем одинаковую высоту всем слайдам
+   slides.forEach(slide => {
+      slide.style.height = maxHeight + 'px';
+      slide.style.minHeight = maxHeight + 'px';
+   });
+
+   // Обновляем Swiper (на всякий случай)
+   if (swiper) swiper.update();
+}
+
+// Запускаем при загрузке
+window.addEventListener('load', setEqualSlideHeight);
+// И при изменении размера окна (адаптив)
+window.addEventListener('resize', setEqualSlideHeight);
+
+// Небольшая задержка на случай асинхронной подгрузки шрифтов и т.п.
+setTimeout(setEqualSlideHeight, 100);
