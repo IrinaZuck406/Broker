@@ -5958,7 +5958,8 @@ textarea:focus {
 }
 
 .first-screen__cooperation-form form input {
-   font-size: 16px;
+   font-family: 'Gilroy-Light';
+   font-size: 20px;
    color: #414141;
    padding-left: 15px;
    width: 455px;
@@ -5968,7 +5969,8 @@ textarea:focus {
 }
 
 .first-screen__cooperation-form form input::placeholder {
-   font-size: 16px;
+   font-family: 'Gilroy-Light';
+   font-size: 20px;
    color: #414141;
 }
 

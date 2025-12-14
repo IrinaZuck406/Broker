@@ -6,18 +6,7 @@ const headerBurgerNav = document.querySelector('.header__burger-nav');
 const headerBurgerNavUlClone = headerBurgerNavUl.cloneNode(true);
 
 headerBurgerNav.appendChild(headerBurgerNavUlClone);
-/*if (iconMenu) {
-   iconMenu.addEventListener("click", function (e) {
-      document.body.classList.add('_lock');
-      headerBurger.classList.add('active');
-   });
-}
-if (iconMenu1) {
-   iconMenu1.addEventListener("click", function (e) {
-      document.body.classList.remove('_lock');
-      headerBurger.classList.remove('active');
-   });
-}*/
+
 /*----------------------Перенос кнопок в шапке-------------------------- */
 const headerButtons = document.querySelector('.header__top .header__buttons');
 const headerBottom = document.querySelector('.header__bottom');
@@ -199,5 +188,74 @@ if (menuLinks.length > 0) {
          /*--откл. работу ссылки, чтобы она только производила прокрутку--*/
          e.preventDefault();
       }
+   }
+}
+/*--------------------Маски для телефонов-------------------*/
+const inputLoan = document.querySelector("#loan");
+if (inputLoan) {
+   inputLoan.addEventListener("input", maskTel);
+   inputLoan.addEventListener("focus", maskTel);
+   inputLoan.addEventListener("blur", maskTel);
+}
+const inputFormItem = document.querySelectorAll(".form__item input");
+if (inputFormItem.length > 0) {
+   inputFormItem.forEach((item) => {
+
+      item.addEventListener("input", maskTel);
+      item.addEventListener("focus", maskTel);
+      item.addEventListener("blur", maskTel);
+   });
+}
+const inputCooperation = document.querySelector('.first-screen__cooperation-form form input');
+if (inputCooperation) {
+   inputCooperation.addEventListener("input", maskTel);
+   inputCooperation.addEventListener("focus", maskTel);
+   inputCooperation.addEventListener("blur", maskTel);
+}
+//Всплывающие окна(маски для тел.):
+const applicationModalImputTel = document.querySelector('.application-modal__content input[type="tel"]');
+const consultationModalImputTel = document.querySelector('.consultation-modal__content input[type="tel"]');
+applicationModalImputTel.addEventListener("input", maskTel);
+applicationModalImputTel.addEventListener("focus", maskTel);
+applicationModalImputTel.addEventListener("blur", maskTel);
+consultationModalImputTel.addEventListener("input", maskTel);
+consultationModalImputTel.addEventListener("focus", maskTel);
+consultationModalImputTel.addEventListener("blur", maskTel);
+/*--*/
+function maskTel(event) {
+   var blank = "+_ (___) ___-__-__";
+
+   var i = 0;
+   var val = this.value.replace(/\D/g, "").replace(/^8/, "7"); // <---
+
+   this.value = blank.replace(/./g, function (char) {
+      if (/[_\d]/.test(char) && i < val.length) return val.charAt(i++);
+
+      return i >= val.length ? "" : char;
+   });
+
+   if (event.type == "blur") {
+      if (this.value.length == 2) this.value = "";
+   } else {
+      setCursorPosition(this, this.value.length);
+   }
+};
+
+/*--*/
+function setCursorPosition(elem, pos) {
+   elem.focus();
+
+   if (elem.setSelectionRange) {
+      elem.setSelectionRange(pos, pos);
+      return;
+   }
+
+   if (elem.createTextRange) {
+      var range = elem.createTextRange();
+      range.collapse(true);
+      range.moveEnd("character", pos);
+      range.moveStart("character", pos);
+      range.select();
+      return;
    }
 }
