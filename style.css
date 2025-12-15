@@ -401,7 +401,7 @@ textarea:focus {
    max-width: 464px;
 }
 
-.consultation-modal__content input {
+.consultation-modal__input-wrapper input {
    margin-bottom: 30px;
    width: 281px;
    height: 55px;
@@ -414,7 +414,7 @@ textarea:focus {
    font-size: calc(18px + 2*(100vw - 414px)/986);
 }
 
-.consultation-modal__content input::placeholder {
+.consultation-modal__input-wrapper input::placeholder {
    font-family: 'Gilroy-Light';
    color: #414141;
    font-size: 20px;
@@ -444,6 +444,23 @@ textarea:focus {
    color: #002976;
 }
 
+.consultation-modal__checkbox-wrapper {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+.consultation-modal__checkbox-wrapper input {
+   width: 20px;
+   height: 20px;
+   margin: 0 20px 0 0;
+}
+
+.consultation-modal__checkbox-wrapper p {
+   margin: 0;
+}
+
 .consultation-modal__x {
    position: absolute;
    top: 10px;
@@ -454,7 +471,7 @@ textarea:focus {
    position: absolute;
    bottom: 35px;
    right: 50px;
-   width: 404px;
+   width: 350px;
 }
 
 @media(min-width:1400px) {
@@ -485,6 +502,15 @@ textarea:focus {
    }
 }
 
+@media(max-width: 1100px) {
+   .consultation-modal__img {
+      top: 120px;
+      bottom: auto;
+      right: 10px;
+      width: 310px;
+   }
+}
+
 @media(max-width:930px) {
    .consultation-modal__img {
       width: 300px;
@@ -505,7 +531,7 @@ textarea:focus {
    }
 
    .consultation-modal__content {
-      padding: 30px 15px;
+      padding: 60px 15px 20px;
    }
 
    .application-modal__subtitle,
@@ -517,8 +543,10 @@ textarea:focus {
       margin-bottom: 10px;
    }
 
-   .consultation-modal__content input {
-      margin-bottom: 20px;
+   .consultation-modal__checkbox-wrapper input {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px 0 0;
    }
 
    .application-modal__content {
@@ -548,16 +576,17 @@ textarea:focus {
 }
 
 @media(max-width:355px) {
-   .consultation-modal__content input {
+   .consultation-modal__input-wrapper input {
       width: 100%;
    }
 
    .consultation-modal__content button {
       padding: 10px 20px;
+      width: 100%;
    }
 }
 
-
+/*-------------------------------------------*/
 .none-item {
    display: none;
 }
