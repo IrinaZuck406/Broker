@@ -1506,12 +1506,7 @@ textarea:focus {
    font-family: 'Gilroy-ExtraBold';
 }
 
-.no-bounce__bg {
-   position: absolute;
-   bottom: 20px;
-   right: 40px;
 
-}
 
 @media(min-width:1400px) {
 
@@ -1534,12 +1529,7 @@ textarea:focus {
       padding-left: 160px;
    }
 
-   .no-bounce__bg {
-      width: 30px;
-      top: 10px;
-      right: 10px;
-      bottom: auto;
-   }
+
 
    .no-bounce__img {
       height: 140px;
