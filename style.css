@@ -804,6 +804,9 @@ textarea:focus {
    overflow: hidden;
 }
 
+.first-screen.first-screen-contact {
+   height: auto;
+}
 
 
 .first-screen__container {
@@ -1058,16 +1061,16 @@ textarea:focus {
 }
 
 .first-screen__map {
-   width: 80%;
-   aspect-ratio: 1200/710;
+
    border-radius: 20px;
-   background-color: #2da3db;
+
    margin: 30px auto 0;
 }
 
-.first-screen__content-contact {
+.first-screen__content.first-screen__content-contact {
    width: 100%;
    position: relative;
+
 }
 
 .first-screen__404-text {
@@ -1080,12 +1083,17 @@ textarea:focus {
 }
 
 .contact-box {
+   display: none;
+}
+
+.contact-box.active {
+   display: block;
    width: 524px;
    padding: 40px 30px;
    border-radius: 20px;
    border: 1px solid #414141;
    position: absolute;
-   bottom: 40px;
+   top: 240px;
    left: 40px;
    background-color: #fff;
 }
@@ -1099,7 +1107,7 @@ textarea:focus {
 }
 
 .contact-box table {
-   max-width: 100%;
+   max-width: 95%;
    font-family: 'Gilroy-Light';
    font-size: 20px;
    font-size: calc(14px + 6*(100vw - 414px)/986);
@@ -1112,6 +1120,24 @@ textarea:focus {
    width: 300px;
    gap: 20px;
    margin-bottom: 20px;
+}
+
+.contact-box__x {
+   position: absolute;
+   top: 30px;
+   right: 30px;
+   cursor: pointer;
+}
+
+.contact-box__arrow.active {
+   opacity: 1;
+   cursor: pointer;
+
+}
+
+.contact-box__arrow {
+   opacity: 0;
+   cursor: auto;
 }
 
 @media(min-width:1400px) {
@@ -1304,10 +1330,17 @@ textarea:focus {
       display: block;
    }
 
-   .contact-box {
-      width: 80%;
+   .contact-box.active {
+      width: 90%;
       bottom: -30px;
-      padding: 10px 5px;
+      padding: 60px 5px 10px;
+      height: 350px;
+      left: 10px;
+   }
+
+   .contact-box__x {
+      top: 5px;
+      right: 5px;
    }
 
    .first-screen__img-10 {
@@ -1317,6 +1350,8 @@ textarea:focus {
    .first-screen__content-gratitude .first-screen__subtitle {
       max-width: 100%;
    }
+
+
 }
 
 @media(max-width:630px) {

@@ -225,5 +225,21 @@ if (accordion) {
 
    });
 }
+/*---------------------Страница контакты, окно с информацией----------------------------------*/
+const contactBox = document.querySelector('.contact-box');
+const contactBoxX = document.querySelector('.contact-box__x');
+const contactBoxArrow = document.querySelector('.contact-box__arrow');
+if (contactBox) {
+   contactBoxX.addEventListener('click', () => {
+      contactBox.classList.remove('active');
+      contactBoxArrow.classList.add('active');
+   });
 
+   contactBoxArrow.addEventListener('click', () => {
+      if (contactBoxArrow.classList.contains('active')) {
+         contactBox.classList.add('active');
+         contactBoxArrow.classList.remove('active');
+      }
+   })
+}
 
