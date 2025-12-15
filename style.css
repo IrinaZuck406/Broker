@@ -3836,6 +3836,13 @@ textarea:focus {
    gap: 15px;
 }
 
+.footer__contacts-item a {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 5px;
+}
+
 .footer__contacts-item p,
 .footer__contacts-item a,
 .footer__info1 li a,
@@ -3968,6 +3975,10 @@ textarea:focus {
 
    .footer__contacts-item {
       align-items: start;
+   }
+
+   .footer__info1 {
+      margin-bottom: 20px;
    }
 }
 
