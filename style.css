@@ -79,6 +79,33 @@ h6 {
 }
 
 /*---------------------*/
+/*---------------------*/
+.title-bold {
+   font-family: 'Gilroy-ExtraBold';
+   font-size: 46px;
+   font-size: calc(24px + 22*(100vw - 414px)/986);
+   color: #414141;
+}
+
+.title-light {
+   font-family: 'Gilroy-Light';
+   font-size: 46px;
+   font-size: calc(24px + 22*(100vw - 414px)/986);
+   color: #414141;
+}
+
+.title-in-background {
+   background-color: #229ED9;
+   color: #fff;
+   border-radius: 8px;
+   font-family: 'Gilroy-ExtraBold';
+   font-size: 46px;
+   font-size: calc(24px + 22*(100vw - 414px)/986);
+   display: inline-block;
+   padding: 0 10px;
+}
+
+/*----------------------*/
 * {
    color: #414141;
 }
@@ -130,12 +157,6 @@ textarea:focus {
    justify-content: flex-end;
    gap: 20px;
 }
-
-/*.header__burger-nav a {
-   font-family: 'Gilroy-Light';
-   font-size: 16px;
-   color: #414141;
-}*/
 
 .burger__x,
 .header__burger-icon {
@@ -536,33 +557,7 @@ textarea:focus {
    }
 }
 
-/*---------------------*/
-.title-bold {
-   font-family: 'Gilroy-ExtraBold';
-   font-size: 46px;
-   font-size: calc(24px + 22*(100vw - 414px)/986);
-   color: #414141;
-}
 
-.title-light {
-   font-family: 'Gilroy-Light';
-   font-size: 46px;
-   font-size: calc(24px + 22*(100vw - 414px)/986);
-   color: #414141;
-}
-
-.title-in-background {
-   background-color: #229ED9;
-   color: #fff;
-   border-radius: 8px;
-   font-family: 'Gilroy-ExtraBold';
-   font-size: 46px;
-   font-size: calc(24px + 22*(100vw - 414px)/986);
-   display: inline-block;
-   padding: 0 10px;
-}
-
-/*----------------------*/
 .none-item {
    display: none;
 }
@@ -727,7 +722,6 @@ textarea:focus {
    padding: 10px 2px;
    line-height: 0.8;
    border-radius: 5px;
-   /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
    transform: scale(0);
    transform-origin: top center;
    transition: all 300ms ease-in-out;
@@ -779,6 +773,7 @@ textarea:focus {
 
 }
 
+/*----------------------Начало---------------------------*/
 .first-screen-min .header__bottom-nav ul {
    justify-content: start;
 }
@@ -981,7 +976,7 @@ textarea:focus {
    font-size: 18px;
    color: #414141;
    width: 174px;
-   transform: translateY(40%);
+   /* transform: translateY(40%);*/
    display: inline-block;
    width: 180px;
 }
@@ -1008,7 +1003,6 @@ textarea:focus {
 }
 
 .first-screen__item-img {
-   /*min-width: 92px;*/
    display: flex;
    justify-content: center;
    align-items: center;
@@ -1205,7 +1199,7 @@ textarea:focus {
    }
 
    .first-screen h1 {
-      max-width: 90%;
+      max-width: 80%;
    }
 
    .first-screen__list {
