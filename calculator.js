@@ -60,14 +60,14 @@ function formatNumberWithSpaces(value) {
    let decimalPart = parts[1] || '';
 
    // Форматируем целую часть с пробелами каждые 3 цифры справа
-
-   integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-
+   if (integerPart) {
+      integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+   }
 
    // Собираем обратно
-
-   return integerPart + '.' + decimalPart;
-
+   if (decimalPart) {
+      return integerPart + '.' + decimalPart;
+   }
    return integerPart;
 }
 
@@ -86,8 +86,6 @@ function calculateSum() {
    // Получаем числовые значения для расчета
 
    const firstInputValue = firstInput.value.trim();
-
-
    const secondInputValue = secondInput.value.trim();
 
    // Для первого поля используем отформатированное значение
@@ -117,6 +115,7 @@ if (firstInput) {
       // Форматируем значение
       const formattedValue = formatNumberWithSpaces(originalValue);
       this.value = formattedValue;
+
 
       // Пытаемся сохранить позицию курсора
       let newCursorPosition = cursorPosition;

@@ -226,7 +226,7 @@ if (accordion) {
    });
 }
 /*---------------------Страница контакты, окно с информацией----------------------------------*/
-const contactBox = document.querySelector('.contact-box');
+/*const contactBox = document.querySelector('.contact-box');
 const contactBoxX = document.querySelector('.contact-box__x');
 const contactBoxArrow = document.querySelector('.contact-box__arrow');
 if (contactBox) {
@@ -241,5 +241,5 @@ if (contactBox) {
          contactBoxArrow.classList.remove('active');
       }
    })
-}
+}*/
 
