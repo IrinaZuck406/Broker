@@ -1955,6 +1955,10 @@ textarea:focus {
 }
 
 .services__tabs-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
    max-width: 49%;
    padding: 25px 20px 20px;
    border: 1px solid #2aabee;
