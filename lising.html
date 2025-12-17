@@ -17,17 +17,27 @@
             <h2 class="application-modal__title">Ваша заявка</h2>
             <p class="application-modal__subtitle">С вами свяжется наш менеджер в течение 5 минут</p>
             <form action="#">
-               <input type="text" placeholder="Имя">
-               <input type="tel" placeholder="+7 (___)-__-__">
-               <textarea name="textarea" placeholder="Сообщение"></textarea>
+               <div class="application-modal__input-wrapper">
+                  <input type="text" placeholder="Имя">
+                  <input type="tel" placeholder="+7 (___)-__-__">
+                  <textarea name="textarea" placeholder="Сообщение"></textarea>
+               </div>
                <button type="submit">Оставить заявку</button>
-               <p class="application-modal__text">Нажимая кнопку "Отправить" вы соглашаетесь на обработку <a
+               <!-- <p class="application-modal__text">Нажимая кнопку "Отправить" вы соглашаетесь на обработку <a
                      href="#">политикой
                      конфиденциальности</a></p>
                <p class="application-modal__text">Этот сайт защищен reCAPTCHA и Google <a href="#">политика
                      конфиденциальности</a> и
                   <a href="#">условия использования.</a>
-               </p>
+               </p>-->
+               <div class="confidentiality__checkbox-wrapper">
+                  <input type="checkbox" name="confidentiality-checkbox1" checked>
+                  <p>Я ознакомлен и согласен с <a href="#">политикой конфеденциальности</a></p>
+               </div>
+               <div class="confidentiality__checkbox-wrapper">
+                  <input type="checkbox" name="confidentiality-checkbox2" checked>
+                  <p>Я согласен на обработку моих персональных данных</p>
+               </div>
             </form>
          </div>
       </div>
@@ -38,10 +48,20 @@
          <img class="consultation-modal__img" src="images/modal-img.png" alt="Картинка">
          <h2>Подберем наилучшие условия и поможем получить кредит.</h2>
          <form action="#">
-            <p>Введите имя</p>
-            <input type="text" placeholder="Имя">
-            <p>Введите номер</p>
-            <input type="tel" placeholder="+7 (___)-__-__">
+            <div class="consultation-modal__input-wrapper">
+               <p>Введите имя</p>
+               <input type="text" placeholder="Имя">
+               <p>Введите номер</p>
+               <input type="tel" placeholder="+7 (___)-__-__">
+            </div>
+            <div class="consultation-modal__checkbox-wrapper">
+               <input type="checkbox" name="consultation-checkbox1" id="consultation-checkbox1" checked>
+               <p>Я ознакомлен и согласен с политикой конфеденциальности</p>
+            </div>
+            <div class="consultation-modal__checkbox-wrapper">
+               <input type="checkbox" name="consultation-checkbox2" id="consultation-checkbox1" checked>
+               <p>Я согласен на обработку моих персональных данных</p>
+            </div>
             <button type="submit">Оставить заявку</button>
          </form>
       </div>
@@ -651,6 +671,14 @@
                         <input type="tel" placeholder="+ 7 (___) ___-__-__">
                         <button type="submit">Получить консультацию&nbsp<img src="images/services-link1.png"></button>
                      </div>
+                     <div class="confidentiality__checkbox-wrapper">
+                        <input type="checkbox" name="confidentiality-checkbox1" checked id="consultation-checkbox1">
+                        <p>Я ознакомлен и согласен с политикой конфеденциальности</p>
+                     </div>
+                     <div class="confidentiality__checkbox-wrapper">
+                        <input type="checkbox" name="confidentiality-checkbox2" checked id="consultation-checkbox1">
+                        <p>Я согласен на обработку моих персональных данных</p>
+                     </div>
                   </form>
                </div>
             </div>
@@ -896,8 +924,18 @@
          <p class="get-approval__text">Оставьте заявку и наш специалист подберёт оптимальное решение под ваш бизнес: с
             выгодным графиком, минимальным авансом и быстрой выдачей</p>
          <form action="#">
-            <input type="text" placeholder="Имя">
-            <input type="tel" placeholder="+ 7 (___) ___-__-__">
+            <div class="get-approval__input-wrapper">
+               <input type="text" placeholder="Имя">
+               <input type="tel" placeholder="+ 7 (___) ___-__-__">
+            </div>
+            <div class="confidentiality__checkbox-wrapper">
+               <input type="checkbox" name="confidentiality-checkbox1" checked id="consultation-checkbox1">
+               <p>Я ознакомлен и согласен с политикой конфеденциальности</p>
+            </div>
+            <div class="confidentiality__checkbox-wrapper">
+               <input type="checkbox" name="confidentiality-checkbox2" checked id="consultation-checkbox1">
+               <p>Я согласен на обработку моих персональных данных</p>
+            </div>
             <button type="submit">Получить консультацию и расчёт</button>
          </form>
 

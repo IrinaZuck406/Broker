@@ -255,9 +255,9 @@ textarea:focus {
    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-.application-modal__overlay.active .application-modal__content {
+/*.application-modal__overlay.active .application-modal__content {
    transform: scale(1);
-}
+}*/
 
 .application-modal__wrapper {
    max-width: 338px;
@@ -269,7 +269,7 @@ textarea:focus {
    font-size: 20px;
    font-size: calc(18px + 2*(100vw - 414px)/986);
    color: #5465f4;
-   margin-bottom: 15px;
+   margin-bottom: 10px;
    text-align: center;
 }
 
@@ -280,20 +280,20 @@ textarea:focus {
    color: #5c5c5c;
    text-align: center;
    max-width: 286px;
-   margin: 0 auto 35px;
+   margin: 0 auto 15px;
 }
 
-.application-modal__wrapper input,
-.application-modal__wrapper textarea,
-.application-modal__wrapper input::placeholder,
-.application-modal__wrapper textarea::placeholder {
+.application-modal__input-wrapper input,
+.application-modal__input-wrapper textarea,
+.application-modal__input-wrapper input::placeholder,
+.application-modal__input-wrapper textarea::placeholder {
    font-family: 'Gilroy-Light';
    color: #414141;
    font-size: 20px;
    font-size: calc(18px + 2*(100vw - 414px)/986);
 }
 
-.application-modal__wrapper input {
+.application-modal__input-wrapper input {
    height: 55px;
    width: 100%;
    border-radius: 15px;
@@ -303,10 +303,10 @@ textarea:focus {
    border: 0.5px solid #00344d;
 }
 
-.application-modal__wrapper textarea {
+.application-modal__input-wrapper textarea {
    width: 100%;
-   height: 181px;
-   margin-bottom: 25px;
+   height: 120px;
+   margin-bottom: 15px;
    border-radius: 15px;
    padding: 15px;
    background-color: #fff;
@@ -542,6 +542,7 @@ textarea:focus {
    .consultation-modal__content p {
       margin-bottom: 10px;
    }
+
 
    .consultation-modal__checkbox-wrapper input {
       width: 20px;
@@ -3099,6 +3100,7 @@ textarea:focus {
    justify-content: flex-start;
    align-items: center;
    gap: 30px;
+   margin-bottom: 20px;
 }
 
 .form__item select {
@@ -3704,7 +3706,7 @@ textarea:focus {
    justify-content: start;
 }
 
-.consultation1 .form__item form input {
+.consultation1 .form__wrapper input {
    width: 295px;
 }
 
@@ -5682,7 +5684,11 @@ textarea:focus {
    padding-bottom: 60px;
 }
 
-.get-approval input {
+.get-approval__input-wrapper {
+   margin-bottom: 20px;
+}
+
+.get-approval__input-wrapper input {
    width: 455px;
    height: 60px;
    border-radius: 10px;
@@ -5695,7 +5701,7 @@ textarea:focus {
    font-size: 20px;
 }
 
-.get-approval__form input::placeholder {
+.get-approval__input-wrapper input::placeholder {
    font-family: 'Gilroy-Light';
    color: #414141;
    font-size: 20px;
@@ -5711,6 +5717,7 @@ textarea:focus {
    color: #fff;
    font-size: 22px;
    font-size: calc(18px + 4*(100vw - 414px)/986);
+   margin-top: 30px;
 }
 
 .get-approval button:hover {
@@ -5718,6 +5725,30 @@ textarea:focus {
    background-color: #2a71f8;
    color: #002976;
 
+
+}
+
+.confidentiality__checkbox-wrapper {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   margin-bottom: 10px;
+   gap: 20px;
+}
+
+.confidentiality__checkbox-wrapper input {
+   width: 20px;
+   height: 20px;
+   margin: 0;
+   padding: 0;
+   flex-shrink: 0;
+   flex-grow: 0;
+}
+
+.confidentiality__checkbox-wrapper p {
+   margin: 0;
+   font-family: 'Gilroy-ExtraBold';
+   font-size: 14px;
 
 }
 
@@ -5748,7 +5779,7 @@ textarea:focus {
 @media(max-width:480px) {
 
    .get-approval button,
-   .get-approval input {
+   .get-approval__input-wrapper input {
       width: 100%;
    }
 
