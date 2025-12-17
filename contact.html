@@ -16,17 +16,27 @@
             <h2 class="application-modal__title">Ваша заявка</h2>
             <p class="application-modal__subtitle">С вами свяжется наш менеджер в течение 5 минут</p>
             <form action="#">
-               <input type="text" placeholder="Имя">
-               <input type="tel" placeholder="+7 (___)-__-__">
-               <textarea name="textarea" placeholder="Сообщение"></textarea>
+               <div class="application-modal__input-wrapper">
+                  <input type="text" placeholder="Имя">
+                  <input type="tel" placeholder="+7 (___)-__-__">
+                  <textarea name="textarea" placeholder="Сообщение"></textarea>
+               </div>
                <button type="submit">Оставить заявку</button>
-               <p class="application-modal__text">Нажимая кнопку "Отправить" вы соглашаетесь на обработку <a
+               <!-- <p class="application-modal__text">Нажимая кнопку "Отправить" вы соглашаетесь на обработку <a
                      href="#">политикой
                      конфиденциальности</a></p>
                <p class="application-modal__text">Этот сайт защищен reCAPTCHA и Google <a href="#">политика
                      конфиденциальности</a> и
                   <a href="#">условия использования.</a>
-               </p>
+               </p>-->
+               <div class="confidentiality__checkbox-wrapper">
+                  <input type="checkbox" name="confidentiality-checkbox1" checked>
+                  <p>Я ознакомлен и согласен с <a href="#">политикой конфеденциальности</a></p>
+               </div>
+               <div class="confidentiality__checkbox-wrapper">
+                  <input type="checkbox" name="confidentiality-checkbox2" checked>
+                  <p>Я согласен на обработку моих персональных данных</p>
+               </div>
             </form>
          </div>
       </div>
