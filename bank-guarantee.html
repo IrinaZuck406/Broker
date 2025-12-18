@@ -382,7 +382,7 @@
    <section class="loan-calculator">
       <div class="loan-calculator__container container">
          <h2 class="title-bold">Рассчитайте стоимость банковской гарантии за 1&nbsp;минуту </h2>
-         <form action="#">
+         <!--   <form action="#">
             <ul class="loan-calculator__ul">
                <li>тендерная</li>
                <li>контрактная</li>
@@ -443,7 +443,259 @@
                </div>
 
             </div>
-         </form>
+         </form>-->
+
+         <div class="calculator">
+            <div class="panel">
+               <h2 class="panel-title">
+                  <i class="fas fa-shield-alt"></i>
+                  Параметры гарантии
+               </h2>
+
+               <div class="input-group">
+                  <label>Сумма гарантии</label>
+                  <div class="slider-container">
+                     <input type="range" min="100000" max="50000000" step="100000" value="5000000" class="slider"
+                        id="amount-slider">
+                     <div class="value-display" id="amount-value">5 000 000 ₽</div>
+                  </div>
+                  <div class="value-subtext">100 тыс. ₽ — 50 млн ₽</div>
+               </div>
+
+               <div class="input-group">
+                  <label>Срок действия (<span id="term-months">12</span> мес.)</label>
+                  <div class="slider-container">
+                     <input type="range" min="1" max="36" step="1" value="12" class="slider" id="term-slider">
+                     <div class="value-display" id="term-value">12</div>
+                  </div>
+                  <div class="value-subtext" id="term-years">1 год 0 мес.</div>
+               </div>
+
+               <div class="input-group">
+                  <label>Комиссия банка (<span id="commission-percent">3</span>% годовых)</label>
+                  <div class="slider-container">
+                     <input type="range" min="0.5" max="10" step="0.1" value="3" class="slider" id="commission-slider">
+                     <div class="value-display" id="commission-value">3%</div>
+                  </div>
+               </div>
+
+               <div class="input-group">
+                  <label>Тип гарантии</label>
+                  <div class="guarantee-type">
+                     <button class="guarantee-btn active" data-type="tender">Тендерная</button>
+                     <button class="guarantee-btn" data-type="execution">Исполнения контракта</button>
+                     <button class="guarantee-btn" data-type="advance">Возврата аванса</button>
+                     <button class="guarantee-btn" data-type="custom">Иная</button>
+                  </div>
+               </div>
+
+               <div class="input-group">
+                  <label>Тип контракта</label>
+                  <div class="contract-type">
+                     <button class="contract-btn active" data-contract="44-fz">44-ФЗ</button>
+                     <button class="contract-btn" data-contract="223-fz">223-ФЗ</button>
+                     <button class="contract-btn" data-contract="185-fz">185-ФЗ</button>
+                     <button class="contract-btn" data-contract="commercial">Коммерческий</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="panel">
+               <h2 class="panel-title">
+                  <i class="fas fa-calculator"></i>
+                  Результаты расчета
+               </h2>
+
+               <div class="result-item">
+                  <div class="result-value" id="guarantee-cost">150 000 ₽</div>
+                  <div class="result-label">Стоимость гарантии</div>
+               </div>
+
+               <div class="summary">
+                  <div class="summary-item">
+                     <div class="summary-value" id="total-amount">5 000 000 ₽</div>
+                     <div class="summary-label">Сумма гарантии</div>
+                  </div>
+                  <div class="summary-item commission-item">
+                     <div class="summary-value commission-value" id="commission-amount">150 000 ₽</div>
+                     <div class="summary-label commission-label">Комиссия банка</div>
+                  </div>
+               </div>
+
+               <div class="details">
+                  <div class="details-grid">
+                     <div class="detail-label">Тип гарантии</div>
+                     <div class="detail-value" id="detail-type">Тендерная</div>
+
+                     <div class="detail-label">Тип контракта</div>
+                     <div class="detail-value" id="detail-contract">44-ФЗ</div>
+
+                     <div class="detail-label">Срок действия</div>
+                     <div class="detail-value" id="detail-term">1 год 0 мес.</div>
+
+                     <div class="detail-label">Ставка комиссии</div>
+                     <div class="detail-value" id="detail-commission">3% годовых</div>
+
+                     <div class="detail-label">Платеж</div>
+                     <div class="detail-value" id="detail-payment">Единовременный</div>
+
+                     <div class="detail-label">Срок оформления</div>
+                     <div class="detail-value" id="detail-processing">1-3 раб. дня</div>
+                  </div>
+               </div>
+
+               <div class="warning">
+                  <strong>Важно:</strong>
+                  Расчет является предварительным. Фактическая стоимость может отличаться в зависимости от банка,
+                  финансового состояния компании, обеспечения и других факторов.
+               </div>
+            </div>
+         </div>
+         <button class="lising-calculator__button  btn-trigger">Оставить заявку</button>
+         <script>
+            // DOM elements
+            const amountSlider = document.getElementById('amount-slider');
+            const amountValue = document.getElementById('amount-value');
+            const termSlider = document.getElementById('term-slider');
+            const termValue = document.getElementById('term-value');
+            const termMonths = document.getElementById('term-months');
+            const termYears = document.getElementById('term-years');
+            const commissionSlider = document.getElementById('commission-slider');
+            const commissionValue = document.getElementById('commission-value');
+            const commissionPercent = document.getElementById('commission-percent');
+            const guaranteeBtns = document.querySelectorAll('.guarantee-btn');
+            const contractBtns = document.querySelectorAll('.contract-btn');
+            const guaranteeCost = document.getElementById('guarantee-cost');
+            const totalAmount = document.getElementById('total-amount');
+            const commissionAmount = document.getElementById('commission-amount');
+            const detailType = document.getElementById('detail-type');
+            const detailContract = document.getElementById('detail-contract');
+            const detailTerm = document.getElementById('detail-term');
+            const detailCommission = document.getElementById('detail-commission');
+            const detailPayment = document.getElementById('detail-payment');
+            const detailProcessing = document.getElementById('detail-processing');
+
+            let guaranteeType = 'tender';
+            let contractType = '44-fz';
+
+            // Format currency
+            function formatCurrency(amount) {
+               return new Intl.NumberFormat('ru-RU', {
+                  style: 'currency',
+                  currency: 'RUB',
+                  minimumFractionDigits: 0,
+                  maximumFractionDigits: 0
+               }).format(amount);
+            }
+
+            // Update display values
+            function updateDisplay() {
+               const amount = parseFloat(amountSlider.value);
+               const term = parseInt(termSlider.value);
+               const commission = parseFloat(commissionSlider.value);
+
+               // Update labels
+               amountValue.textContent = formatCurrency(amount);
+
+               termMonths.textContent = term;
+               termValue.textContent = term;
+               const years = Math.floor(term / 12);
+               const months = term % 12;
+               termYears.textContent = `${years} ${getYearText(years)} ${months} ${getMonthText(months)}`;
+
+               commissionPercent.textContent = commission;
+               commissionValue.textContent = commission + '%';
+
+               // Update details
+               totalAmount.textContent = formatCurrency(amount);
+               detailTerm.textContent = `${years} ${getYearText(years)} ${months} ${getMonthText(months)}`;
+               detailCommission.textContent = commission + '% годовых';
+
+               // Calculate and update results
+               calculateGuarantee();
+            }
+
+            // Helper functions for Russian text
+            function getYearText(years) {
+               if (years === 0) return '';
+               if (years % 10 === 1 && years % 100 !== 11) return 'год';
+               if (years % 10 >= 2 && years % 10 <= 4 && (years % 100 < 10 || years % 100 >= 20)) return 'года';
+               return 'лет';
+            }
+
+            function getMonthText(months) {
+               if (months === 0) return '';
+               if (months % 10 === 1 && months % 100 !== 11) return 'мес.';
+               if (months % 10 >= 2 && months % 10 <= 4 && (months % 100 < 10 || months % 100 >= 20)) return 'мес.';
+               return 'мес.';
+            }
+
+            // Calculate guarantee cost
+            function calculateGuarantee() {
+               const amount = parseFloat(amountSlider.value);
+               const term = parseInt(termSlider.value);
+               const commission = parseFloat(commissionSlider.value);
+
+               // Calculate annual commission
+               const annualCommission = amount * (commission / 100);
+               // Calculate actual commission for the term
+               const actualCommission = annualCommission * (term / 12);
+
+               guaranteeCost.textContent = formatCurrency(Math.round(actualCommission));
+               commissionAmount.textContent = formatCurrency(Math.round(actualCommission));
+            }
+
+            // Event listeners
+            amountSlider.addEventListener('input', updateDisplay);
+            termSlider.addEventListener('input', updateDisplay);
+            commissionSlider.addEventListener('input', updateDisplay);
+
+            guaranteeBtns.forEach(btn => {
+               btn.addEventListener('click', () => {
+                  guaranteeBtns.forEach(b => b.classList.remove('active'));
+                  btn.classList.add('active');
+                  guaranteeType = btn.dataset.type;
+
+                  // Update type display
+                  const typeNames = {
+                     'tender': 'Тендерная',
+                     'execution': 'Исполнения контракта',
+                     'advance': 'Возврата аванса',
+                     'custom': 'Иная'
+                  };
+                  detailType.textContent = typeNames[guaranteeType];
+               });
+            });
+
+            contractBtns.forEach(btn => {
+               btn.addEventListener('click', () => {
+                  contractBtns.forEach(b => b.classList.remove('active'));
+                  btn.classList.add('active');
+                  contractType = btn.dataset.contract;
+
+                  // Update contract display
+                  const contractNames = {
+                     '44-fz': '44-ФЗ',
+                     '223-fz': '223-ФЗ',
+                     '185-fz': '185-ФЗ',
+                     'commercial': 'Коммерческий'
+                  };
+                  detailContract.textContent = contractNames[contractType];
+
+                  // Update processing time based on contract type
+                  const processingTimes = {
+                     '44-fz': '1-3 раб. дня',
+                     '223-fz': '1-2 раб. дня',
+                     '185-fz': '2-4 раб. дня',
+                     'commercial': '1 раб. день'
+                  };
+                  detailProcessing.textContent = processingTimes[contractType];
+               });
+            });
+
+            // Initialize
+            updateDisplay();
+         </script>
          <div class="loan-calculator__text">
             <p>Окончательные условия по кредиту зависят от финансового положения заемщика, возраста, семейного
                положения, финансовой дисциплины и других обстоятельств. Окончательное решение по кредиту принимается

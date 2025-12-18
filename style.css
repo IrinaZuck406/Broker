@@ -6698,3 +6698,37 @@ textarea:focus {
    margin: 30px auto 0;
    display: block;
 }
+
+/*-----------------------------------------------*/
+
+.guarantee-type,
+.contract-type {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+   gap: 12px;
+   margin-top: 8px;
+}
+
+.guarantee-btn,
+.contract-btn {
+   padding: 12px;
+   border: 2px solid #d1d5db;
+   border-radius: 8px;
+   background: white;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.2s;
+   text-align: center;
+}
+
+.guarantee-btn.active,
+.contract-btn.active {
+   background: #059669;
+   color: white;
+   border-color: #059669;
+}
+
+.guarantee-btn:hover:not(.active),
+.contract-btn:hover:not(.active) {
+   border-color: #68d391;
+}
