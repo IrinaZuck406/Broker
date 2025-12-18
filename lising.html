@@ -778,21 +778,21 @@
                calc();
 
                // Модальное окно
-               var modal = document.getElementById('modalWindow');
+               var modalLising = document.getElementById('modalWindow');
                function openModal() {
                   var p = document.getElementById('result_payment').innerText;
                   var c = document.getElementById('i_cost').value;
                   document.getElementById('modalSummary').innerHTML =
                      "Авто: <b>" + c + " ₽</b><br>Платеж: <b>" + p + "</b>";
-                  modal.style.display = 'flex';
+                  modalLising.style.display = 'flex';
                }
-               function closeModal() { modal.style.display = 'none'; }
+               function closeModal() { modalLising.style.display = 'none'; }
                function sendForm(e) {
                   e.preventDefault();
                   alert('Заявка отправлена!');
                   closeModal();
                }
-               window.onclick = function (e) { if (e.target == modal) closeModal(); }
+               window.onclick = function (e) { if (e.target == modalLising) closeModal(); }
             </script>
          </div>
          <div class="loan-calculator__text">
@@ -1484,7 +1484,7 @@
    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
    <script src="burger.js"></script>
    <script src="script.js"></script>
-   <script src="calculator-garantii.js"></script>
+   <!-- <script src="calculator-garantii.js"></script>-->
 </body>
 
 </html>
