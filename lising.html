@@ -367,7 +367,7 @@
    <section class="loan-calculator">
       <div class="loan-calculator__container container">
          <h2 class="title-bold">Рассчитайте ежемесячный платеж и узнайте свою экономию на налогах за 1 минуту</h2>
-         <form action="#">
+         <!--  <form action="#">
             <ul class="loan-calculator__ul">
                <li>Оборудование</li>
                <li>Техника</li>
@@ -397,6 +397,7 @@
                   </div>
 
                </div>
+               
                <div class="loan-calculator__result">
                   <p class="loan-calculator__result-text">Комиссия</p>
                   <p class="loan-calculator__result-text-1"><span>3.976</span> ₽</p>
@@ -427,7 +428,238 @@
                </div>
 
             </div>
-         </form>
+         </form>-->
+         <div class="calculator">
+            <div class="panel">
+               <h2 class="panel-title">
+                  <i class="fas fa-dollar-sign"></i>
+                  Параметры лизинга
+               </h2>
+
+               <div class="input-group">
+                  <label>Стоимость оборудования</label>
+                  <div class="slider-container">
+                     <input type="range" min="400000" max="80000000" step="50000" value="1000000" class="slider"
+                        id="cost-slider">
+                     <div class="value-display" id="cost-value">1 000 000 ₽</div>
+                  </div>
+                  <div class="value-subtext">400 тыс. ₽ — 80 млн ₽</div>
+               </div>
+
+               <div class="input-group">
+                  <label>Первоначальный взнос (<span id="initial-percent">20</span>%)</label>
+                  <div class="slider-container">
+                     <input type="range" min="5" max="49" step="1" value="20" class="slider" id="initial-slider">
+                     <div class="value-display" id="initial-value">20%</div>
+                  </div>
+                  <div class="value-subtext" id="initial-amount">200 000 ₽</div>
+               </div>
+
+               <div class="input-group">
+                  <label>Срок лизинга (<span id="period-months">36</span> мес.)</label>
+                  <div class="slider-container">
+                     <input type="range" min="12" max="60" step="1" value="36" class="slider" id="period-slider">
+                     <div class="value-display" id="period-value">36</div>
+                  </div>
+                  <div class="value-subtext" id="period-years">3 года 0 мес.</div>
+               </div>
+
+               <div class="input-group">
+                  <label>Процентная ставка (<span id="rate-percent">12</span>%)</label>
+                  <div class="slider-container">
+                     <input type="range" min="1" max="5" step="0.1" value="12" class="slider" id="rate-slider">
+                     <div class="value-display" id="rate-value">12%</div>
+                  </div>
+               </div>
+
+               <div class="input-group">
+                  <label>Тип платежа</label>
+                  <div class="payment-type">
+                     <button class="payment-btn active" data-type="annuity">Аннуитетный</button>
+                     <button class="payment-btn" data-type="differentiated">Дифференцированный</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="panel">
+               <h2 class="panel-title">
+                  <i class="fas fa-chart-line"></i>
+                  Результаты расчета
+               </h2>
+
+               <div class="result-item">
+                  <div class="result-value" id="monthly-payment">24 589 ₽</div>
+                  <div class="result-label">Ежемесячный платеж</div>
+               </div>
+
+               <div class="summary">
+                  <div class="summary-item">
+                     <div class="summary-value" id="total-payment">1 085 204 ₽</div>
+                     <div class="summary-label">Общая сумма</div>
+                  </div>
+                  <div class="summary-item overpayment-item">
+                     <div class="summary-value overpayment-value" id="overpayment">85 204 ₽</div>
+                     <div class="summary-label overpayment-label">Переплата</div>
+                  </div>
+               </div>
+
+               <div class="details">
+                  <div class="details-grid">
+                     <div class="detail-label">Стоимость оборудования</div>
+                     <div class="detail-value" id="detail-cost">1 000 000 ₽</div>
+
+                     <div class="detail-label">Первоначальный взнос</div>
+                     <div class="detail-value" id="detail-initial">200 000 ₽</div>
+
+                     <div class="detail-label">Сумма лизинга</div>
+                     <div class="detail-value" id="detail-lease">800 000 ₽</div>
+
+                     <div class="detail-label">Срок</div>
+                     <div class="detail-value" id="detail-period">3 года 0 мес.</div>
+                  </div>
+               </div>
+
+               <div class="warning">
+                  <strong>Важно:</strong>
+                  Расчет является предварительным. Фактические условия могут отличаться в зависимости от типа
+                  оборудования и других факторов.
+               </div>
+            </div>
+         </div>
+         <script>
+            // DOM elements
+            const costSlider = document.getElementById('cost-slider');
+            const costValue = document.getElementById('cost-value');
+            const initialSlider = document.getElementById('initial-slider');
+            const initialValue = document.getElementById('initial-value');
+            const initialPercent = document.getElementById('initial-percent');
+            const initialAmount = document.getElementById('initial-amount');
+            const periodSlider = document.getElementById('period-slider');
+            const periodValue = document.getElementById('period-value');
+            const periodMonths = document.getElementById('period-months');
+            const periodYears = document.getElementById('period-years');
+            const rateSlider = document.getElementById('rate-slider');
+            const rateValue = document.getElementById('rate-value');
+            const ratePercent = document.getElementById('rate-percent');
+            const paymentBtns = document.querySelectorAll('.payment-btn');
+            const monthlyPayment = document.getElementById('monthly-payment');
+            const totalPayment = document.getElementById('total-payment');
+            const overpayment = document.getElementById('overpayment');
+            const detailCost = document.getElementById('detail-cost');
+            const detailInitial = document.getElementById('detail-initial');
+            const detailLease = document.getElementById('detail-lease');
+            const detailPeriod = document.getElementById('detail-period');
+
+            let paymentType = 'annuity';
+
+            // Format currency
+            function formatCurrency(amount) {
+               return new Intl.NumberFormat('ru-RU', {
+                  style: 'currency',
+                  currency: 'RUB',
+                  minimumFractionDigits: 0,
+                  maximumFractionDigits: 0
+               }).format(amount);
+            }
+
+            // Update display values
+            function updateDisplay() {
+               const cost = parseFloat(costSlider.value);
+               const initialPct = parseFloat(initialSlider.value);
+               const period = parseInt(periodSlider.value);
+               const rate = parseFloat(rateSlider.value);
+
+               // Update labels
+               costValue.textContent = formatCurrency(cost);
+               initialPercent.textContent = initialPct;
+               initialValue.textContent = initialPct + '%';
+               initialAmount.textContent = formatCurrency(cost * initialPct / 100);
+
+               periodMonths.textContent = period;
+               periodValue.textContent = period;
+               const years = Math.floor(period / 12);
+               const months = period % 12;
+               periodYears.textContent = `${years} ${getYearText(years)} ${months} ${getMonthText(months)}`;
+
+               ratePercent.textContent = rate;
+               rateValue.textContent = rate + '%';
+
+               // Update details
+               detailCost.textContent = formatCurrency(cost);
+               detailInitial.textContent = formatCurrency(cost * initialPct / 100);
+               detailLease.textContent = formatCurrency(cost - (cost * initialPct / 100));
+               detailPeriod.textContent = `${years} ${getYearText(years)} ${months} ${getMonthText(months)}`;
+
+               // Calculate and update results
+               calculateLeasing();
+            }
+
+            // Helper functions for Russian text
+            function getYearText(years) {
+               if (years % 10 === 1 && years % 100 !== 11) return 'год';
+               if (years % 10 >= 2 && years % 10 <= 4 && (years % 100 < 10 || years % 100 >= 20)) return 'года';
+               return 'лет';
+            }
+
+            function getMonthText(months) {
+               if (months === 0) return '';
+               if (months % 10 === 1 && months % 100 !== 11) return 'мес.';
+               if (months % 10 >= 2 && months % 10 <= 4 && (months % 100 < 10 || months % 100 >= 20)) return 'мес.';
+               return 'мес.';
+            }
+
+            // Calculate leasing
+            function calculateLeasing() {
+               const cost = parseFloat(costSlider.value);
+               const initialPct = parseFloat(initialSlider.value);
+               const period = parseInt(periodSlider.value);
+               const rate = parseFloat(rateSlider.value);
+
+               const initialAmount = cost * initialPct / 100;
+               const loanAmount = cost - initialAmount;
+               const monthlyRate = rate / 100 / 12;
+
+               let monthly;
+               if (paymentType === 'annuity') {
+                  // Аннуитетный платеж
+                  if (monthlyRate === 0) {
+                     monthly = loanAmount / period;
+                  } else {
+                     monthly = (loanAmount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -period));
+                  }
+               } else {
+                  // Дифференцированный платеж (среднемесячный для упрощения)
+                  const firstPayment = loanAmount / period + loanAmount * monthlyRate;
+                  const lastPayment = loanAmount / period + (loanAmount / period) * monthlyRate;
+                  monthly = (firstPayment + lastPayment) / 2;
+               }
+
+               const total = monthly * period + initialAmount;
+               const overpay = total - cost;
+
+               monthlyPayment.textContent = formatCurrency(Math.round(monthly));
+               totalPayment.textContent = formatCurrency(Math.round(total));
+               overpayment.textContent = formatCurrency(Math.round(overpay));
+            }
+
+            // Event listeners
+            costSlider.addEventListener('input', updateDisplay);
+            initialSlider.addEventListener('input', updateDisplay);
+            periodSlider.addEventListener('input', updateDisplay);
+            rateSlider.addEventListener('input', updateDisplay);
+
+            paymentBtns.forEach(btn => {
+               btn.addEventListener('click', () => {
+                  paymentBtns.forEach(b => b.classList.remove('active'));
+                  btn.classList.add('active');
+                  paymentType = btn.dataset.type;
+                  calculateLeasing();
+               });
+            });
+
+            // Initialize
+            updateDisplay();
+         </script>
          <div class="loan-calculator__text">
             <p>Окончательные условия по кредиту зависят от финансового положения заемщика, возраста, семейного
                положения, финансовой дисциплины и других обстоятельств. Окончательное решение по кредиту принимается
