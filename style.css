@@ -6437,7 +6437,8 @@ textarea:focus {
 
 .panel-title {
    font-size: 1.25rem;
-   font-weight: 600;
+   font-family: 'Gilroy-ExtraBold';
+
    color: #1e40af;
    margin-bottom: 24px;
    display: flex;
@@ -6451,7 +6452,8 @@ textarea:focus {
 
 .input-group label {
    display: block;
-   font-weight: 500;
+   font-family: 'Gilroy-ExtraBold';
+
    color: #374151;
    margin-bottom: 8px;
 }
@@ -6489,13 +6491,15 @@ textarea:focus {
 .value-display {
    min-width: 100px;
    text-align: right;
-   font-weight: 600;
+   font-family: 'Gilroy-ExtraBold';
+
    color: #4f46e5;
    font-size: 1.1rem;
 }
 
 .value-subtext {
    color: #6b7280;
+   font-family: 'Gilroy-ExtraBold';
    font-size: 0.875rem;
    margin-top: 4px;
 }
@@ -6508,11 +6512,13 @@ textarea:focus {
 
 .payment-btn {
    flex: 1;
+   font-family: 'Gilroy-ExtraBold';
    padding: 12px;
    border: 2px solid #d1d5db;
    border-radius: 8px;
+   font-size: 20px;
    background: white;
-   font-weight: 500;
+
    cursor: pointer;
    transition: all 0.2s;
 }
@@ -6537,13 +6543,15 @@ textarea:focus {
 
 .result-value {
    font-size: 2rem;
-   font-weight: 700;
+   font-family: 'Gilroy-ExtraBold';
+
    color: #4f46e5;
    margin-bottom: 8px;
 }
 
 .result-label {
-   color: #4b5563;
+   font-family: 'Gilroy-ExtraBold';
+
    font-size: 1rem;
 }
 
@@ -6563,11 +6571,13 @@ textarea:focus {
 
 .summary-value {
    font-weight: 600;
+   font-family: 'Gilroy-ExtraBold';
    color: #1f2937;
    margin-bottom: 4px;
 }
 
 .summary-label {
+   font-family: 'Gilroy-ExtraBold';
    color: #6b7280;
    font-size: 0.875rem;
 }
@@ -6582,6 +6592,7 @@ textarea:focus {
 }
 
 .overpayment-label {
+   font-family: 'Gilroy-ExtraBold';
    color: #dc2626;
 }
 
@@ -6600,16 +6611,19 @@ textarea:focus {
 }
 
 .detail-label {
+   font-family: 'Gilroy-ExtraBold';
    color: #6b7280;
 }
 
 .detail-value {
-   font-weight: 600;
+   font-family: 'Gilroy-ExtraBold';
+
    color: #1f2937;
    text-align: right;
 }
 
 .warning {
+   font-family: 'Gilroy-ExtraBold';
    background: #fffbeb;
    border: 1px solid #fde68a;
    border-radius: 8px;
@@ -6620,6 +6634,7 @@ textarea:focus {
 }
 
 .warning strong {
+   font-family: 'Gilroy-ExtraBold';
    display: block;
    margin-bottom: 4px;
    color: #92400e;
@@ -6634,8 +6649,9 @@ textarea:focus {
 }
 
 .info-title {
+   font-family: 'Gilroy-ExtraBold';
    font-size: 1.25rem;
-   font-weight: 600;
+
    color: #1e40af;
    margin-bottom: 20px;
 }
@@ -6647,7 +6663,7 @@ textarea:focus {
 }
 
 .info-item h4 {
-   font-weight: 600;
+   font-family: 'Gilroy-ExtraBold';
    color: #374151;
    margin-bottom: 8px;
 }
@@ -6669,4 +6685,16 @@ textarea:focus {
    display: inline-block;
    width: 1em;
    margin-left: -1em;
+}
+
+.lising-calculator__button {
+   font-family: 'Gilroy-ExtraBold';
+   font-size: 24px;
+   background-color: #2aabee;
+   color: #fff;
+   width: 500px;
+   height: 60px;
+   border-radius: 20px;
+   margin: 30px auto 0;
+   display: block;
 }
