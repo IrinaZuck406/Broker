@@ -6697,6 +6697,13 @@ textarea:focus {
    border-radius: 20px;
    margin: 30px auto 0;
    display: block;
+   transition: all 0.3s ease;
+}
+
+.lising-calculator__button:hover {
+   background-color: #2a71f8;
+   color: #002976;
+   box-shadow: 5px 5px 10px #999999;
 }
 
 /*-----------------------------------------------*/
@@ -6711,11 +6718,12 @@ textarea:focus {
 
 .guarantee-btn,
 .contract-btn {
+   font-family: 'Gilroy-ExtraBold';
    padding: 12px;
    border: 2px solid #d1d5db;
    border-radius: 8px;
    background: white;
-   font-weight: 500;
+
    cursor: pointer;
    transition: all 0.2s;
    text-align: center;
@@ -6724,6 +6732,7 @@ textarea:focus {
 .guarantee-btn.active,
 .contract-btn.active {
    background: #059669;
+   font-family: 'Gilroy-ExtraBold';
    color: white;
    border-color: #059669;
 }
