@@ -1693,7 +1693,7 @@ textarea:focus {
    margin-bottom: 40px;
 }
 
-.loan-calculator__result label {
+.loan-calculator__result-input label {
    font-family: 'Gilroy-ExtraBold';
    font-size: 20px;
    font-size: calc(18px + 2*(100vw - 414px)/986);
@@ -1701,7 +1701,7 @@ textarea:focus {
    margin-bottom: 10px;
 }
 
-.loan-calculator__result input {
+.loan-calculator__result-input input {
    width: 100%;
    border-radius: 10px;
    height: 59px;
@@ -1710,8 +1710,8 @@ textarea:focus {
    margin-bottom: 15px;
 }
 
-.loan-calculator__result input,
-.loan-calculator__result input::placeholder {
+.loan-calculator__result-input input,
+.loan-calculator__result-input input::placeholder {
    font-family: 'Gilroy-Light';
    font-size: 20px;
    font-size: calc(16px + 4*(100vw - 414px)/986);
@@ -1776,9 +1776,9 @@ textarea:focus {
    }
 
    .loan-calculator__input input,
-   .loan-calculator__result input,
-   .loan-calculator__result input::placeholder,
-   .loan-calculator__result label,
+   .lloan-calculator__result-input input,
+   .loan-calculator__result-input input::placeholder,
+   .loan-calculator__result-input label,
    .loan-calculator__result-text,
    .loan-calculator__input-text {
       font-size: 20px;
