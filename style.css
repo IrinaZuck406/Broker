@@ -6142,7 +6142,7 @@ textarea:focus {
 .cooperation-proposal__item-header {
    display: flex;
    justify-content: flex-start;
-   align-items: flex-end;
+   align-items: center;
    gap: 10px;
    margin-bottom: 30px;
 }
