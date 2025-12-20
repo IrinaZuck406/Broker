@@ -663,7 +663,7 @@
          </script>
          <div class="container">
             <div class="lz-calculator">
-               <h2>Калькулятор лизинга —<br>онлайн расчет платежей</h2>
+               <!--   <h2>Калькулятор лизинга —<br>онлайн расчет платежей</h2>-->
 
                <div class="lz-group">
                   <label class="lz-label">Стоимость техники</label>
@@ -713,22 +713,30 @@
                   <div class="lz-res-title">Ежемесячный платеж</div>
                   <div class="lz-res-val" id="result_payment">0 ₽</div>
                </div>
-
-               <button class="lz-btn" onclick="openModal()">Оставить заявку</button>
-            </div>
-
-            <div id="modalWindow" class="lz-modal">
-               <div class="lz-modal-content">
-                  <span class="lz-close" onclick="closeModal()">&times;</span>
-                  <h3 style="margin-top:0">Заявка</h3>
-                  <div class="lz-summary" id="modalSummary"></div>
-                  <form onsubmit="sendForm(event)">
-                     <input type="text" placeholder="Имя" required>
-                     <input type="tel" placeholder="Телефон" required>
-                     <button type="submit" class="lz-btn">Отправить</button>
-                  </form>
+               <div class="warning">
+                  <strong>Важно:</strong>
+                  Расчет является предварительным. Фактические условия могут отличаться в зависимости от типа
+                  оборудования и других факторов.
                </div>
             </div>
+
+            <button class="lising-calculator__button btn-trigger">Оставить заявку</button>
+
+            <!--        <button class="lz-btn" onclick="openModal()">Оставить заявку</button>
+               </div>
+   
+               <div id="modalWindow" class="lz-modal">
+                  <div class="lz-modal-content">
+                     <span class="lz-close" onclick="closeModal()">&times;</span>
+                     <h3 style="margin-top:0">Заявка</h3>
+                     <div class="lz-summary" id="modalSummary"></div>
+                     <form onsubmit="sendForm(event)">
+                        <input type="text" placeholder="Имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <button type="submit" class="lz-btn">Отправить</button>
+                     </form>
+                  </div>
+               </div>-->
 
             <script>
                // Простая функция форматирования (1000 -> 1 000)
