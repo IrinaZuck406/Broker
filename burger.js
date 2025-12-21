@@ -72,47 +72,7 @@ document.addEventListener('keydown', (e) => {
       consultationCloseModal();
    }
 });
-/*------------Всплывающее окно "Заявка"----------*/
-const applicationModal = document.querySelector('.application-modal__overlay');
-const applicationTriggerBtn = document.querySelectorAll('.application-btn-trigger');
-const applicationCloseBtn = document.querySelector('.application-modal__x');
-const applicationConfirmBtn = document.querySelector('.application-modal__content button');
 
-
-// Функция открытия модального окна
-function applicationOpenModal() {
-   applicationModal.classList.add('active');
-   document.body.classList.add('_lock');
-}
-
-// Функция закрытия модального окна
-function applicationCloseModal() {
-   applicationModal.classList.remove('active');
-   document.body.classList.remove('_lock');
-}
-
-// Обработчики событий
-
-applicationTriggerBtn.forEach(elem => {
-   elem.addEventListener('click', applicationOpenModal);
-})
-applicationCloseBtn.addEventListener('click', applicationCloseModal);
-applicationConfirmBtn.addEventListener('click', applicationCloseModal);
-
-
-// Закрытие окна при клике за его пределами
-applicationModal.addEventListener('click', (e) => {
-   if (e.target === applicationModal) {
-      applicationCloseModal();
-   }
-});
-
-// Закрытие окна при нажатии клавиши Escape
-document.addEventListener('keydown', (e) => {
-   if (e.key === 'Escape' && applicationModal.classList.contains('active')) {
-      applicationCloseModal();
-   }
-});
 /*------------Всплывающее окно "Бургер"----------*/
 const burgerModal = document.querySelector('.burger__overlay');
 const burgerTriggerBtn = document.querySelectorAll('.burger-btn-trigger');
@@ -213,11 +173,9 @@ if (inputCooperation) {
    inputCooperation.addEventListener("blur", maskTel);
 }
 //Всплывающие окна(маски для тел.):
-const applicationModalImputTel = document.querySelector('.application-modal__content input[type="tel"]');
+
 const consultationModalImputTel = document.querySelector('.consultation-modal__content input[type="tel"]');
-applicationModalImputTel.addEventListener("input", maskTel);
-applicationModalImputTel.addEventListener("focus", maskTel);
-applicationModalImputTel.addEventListener("blur", maskTel);
+
 consultationModalImputTel.addEventListener("input", maskTel);
 consultationModalImputTel.addEventListener("focus", maskTel);
 consultationModalImputTel.addEventListener("blur", maskTel);

@@ -479,27 +479,18 @@ textarea:focus {
       font-size: 32px;
    }
 
-   .application-modal__subtitle {
-      font-size: 28px;
-   }
+
 
    .consultation-modal__content button {
       font-size: 24px;
    }
 
-   .application-modal__wrapper input,
-   .application-modal__wrapper textarea,
-   .application-modal__wrapper input::placeholder,
-   .application-modal__wrapper textarea::placeholder,
-   .application-modal__title,
+
    .consultation-modal__content input::placeholder,
    .consultation-modal__content input {
       font-size: 20px;
    }
 
-   .application-modal__text {
-      font-size: 16px;
-   }
 }
 
 @media(max-width: 1100px) {
@@ -534,7 +525,7 @@ textarea:focus {
       padding: 60px 15px 20px;
    }
 
-   .application-modal__subtitle,
+
    .consultation-modal__content h2 {
       margin-bottom: 30px;
    }
@@ -550,31 +541,11 @@ textarea:focus {
       margin: 0 10px 0 0;
    }
 
-   .application-modal__content {
-      padding: 30px 23px;
-   }
+
 }
 
-@media(max-width:400px) {
-   .application-modal__content {
-      padding: 10px;
-   }
-}
 
-@media(max-width:380px) {
-   .application-modal__text {
-      margin-bottom: 0;
-   }
 
-   .application-modal__wrapper textarea {
-      margin-bottom: 10px;
-   }
-
-   .application-modal__title,
-   .application-modal__subtitle {
-      margin-bottom: 10px;
-   }
-}
 
 @media(max-width:355px) {
    .consultation-modal__input-wrapper input {
@@ -795,6 +766,7 @@ textarea:focus {
    flex-grow: 1;
 }
 
+.header__bottom-nav1 ul,
 .header__bottom-nav ul {
    display: flex;
    justify-content: space-between;
@@ -808,13 +780,14 @@ textarea:focus {
    justify-content: start;
 }
 
+.header__bottom-nav1 ul li a,
 .header__bottom-nav ul li a {
    font-family: 'Gilroy-Light';
    font-size: 18px;
    color: #414141;
 }
 
-.header__bottom-nav ul li a:hover {
+.header__bottom-nav1 ul li a .header__bottom-nav ul li a:hover {
    color: #002976;
    text-decoration: underline;
 }
@@ -1563,16 +1536,7 @@ textarea:focus {
    margin-bottom: 20px;
 }
 
-/*
-.loan-calculator__wrapper form {
-   width: 100%;
-   height: 100%;
-   padding: 0 30px;
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-end;
-}
-*/
+
 .loan-calculator__wrapper {
 
    padding: 0 30px;
@@ -1836,10 +1800,7 @@ textarea:focus {
       padding-bottom: 0;
    }
 
-   /* .loan-calculator__data-entry-container {
-      flex-direction: row;
-      align-items: center;
-   }*/
+
 }
 
 @media(max-width:800px) {
@@ -1872,10 +1833,7 @@ textarea:focus {
       margin-bottom: 30px;
    }
 
-   .loan-calculator__wrapper
-
-   /* form*/
-      {
+   .loan-calculator__wrapper {
       padding: 0;
    }
 
@@ -3279,12 +3237,7 @@ textarea:focus {
       width: 100%;
    }
 
-   /*.consultation__item-form .form__wrapper {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 10px;
-   }*/
+
 
    .form__wrapper {
       gap: 10px;
@@ -3292,13 +3245,12 @@ textarea:focus {
 
    .form__item input[type="tel"] {
       width: 200px;
-      /* height: 40px;*/
+
       border-radius: 15px;
    }
 
    .form__item button {
-      /* width: 200px;*/
-      /* height: 40px;*/
+
       border-radius: 15px;
 
    }
@@ -3315,11 +3267,6 @@ textarea:focus {
       height: 10px;
    }
 
-   /*.form__wrapper {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-   }*/
 }
 
 @media(max-width:413px) {
@@ -3352,10 +3299,7 @@ textarea:focus {
 }
 
 .jandex-karti-reiting {
-   /* display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: flex-start;*/
+
    width: 300px;
 }
 
@@ -4533,12 +4477,6 @@ textarea:focus {
    background-color: #fff;
 }
 
-/*.calculation-ransom__item {
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: -1;
-}*/
 
 .calculation-ransom__item.active {
    opacity: 1;
@@ -5092,7 +5030,7 @@ textarea:focus {
    color: #414141;
    margin-bottom: 25px;
    text-align: center;
-   /* padding-right: 53px;*/
+
 }
 
 .business-options-slider__slide-text {
